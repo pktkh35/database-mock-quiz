@@ -17,9 +17,15 @@ export async function GET(request) {
   const params = request.nextUrl.searchParams;
   const withExample = async (q) => {
     const pub = publicQuestion(q);
-    if (!q.example) return pub;
-    const { columns, rows, scales } = await runQuery(q.dataset, q.example.sql);
-    return { ...pub, example: { columns, rows, scales } };
+    // Hand-written example if present, otherwise the first rows of the model answer (format hint only).
+    const r = await runQuery(q.dataset, q.example?.sql ?? q.sql);
+    const total = r.rows.length;
+    if (q.example) return { ...pub, example: { columns: r.columns, rows: r.rows, scales: r.scales } };
+    // Auto example must not give the answer away: hide function names in headers, and
+    // show only the column layout when the whole result is that small.
+    const columns = r.columns.map((c, i) => (/[()]/.test(c) ? `คอลัมน์ ${i + 1}` : c));
+    const headerOnly = total <= 2;
+    return { ...pub, example: { columns, rows: headerOnly ? [] : r.rows.slice(0, 2), scales: r.scales, auto: true, headerOnly, total } };
   };
   if (params.has("ids")) {
     const ids = params.get("ids").split(",").filter(Boolean).slice(0, 50);

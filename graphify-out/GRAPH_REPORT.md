@@ -1,16 +1,16 @@
 # Graph Report - database-mock-quiz  (2026-10-07)
 
 ## Corpus Check
-- 40 files · ~20,149 words
+- 40 files · ~20,619 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 182 nodes · 242 edges · 17 communities (12 shown, 5 thin omitted)
+- 184 nodes · 244 edges · 18 communities (13 shown, 5 thin omitted)
 - Extraction: 97% EXTRACTED · 3% INFERRED · 0% AMBIGUOUS · INFERRED: 7 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `3cac6388`
+- Built from commit: `c299aa4d`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -31,6 +31,7 @@
 - [[_COMMUNITY_Community 14|Community 14]]
 - [[_COMMUNITY_Community 15|Community 15]]
 - [[_COMMUNITY_Community 16|Community 16]]
+- [[_COMMUNITY_Community 17|Community 17]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `runQuery()` - 14 edges
@@ -47,28 +48,28 @@
 ## Surprising Connections (you probably didn't know these)
 - `GET()` --calls--> `getSchema()`  [INFERRED]
   src/app/api/schema/route.js → src/lib/engine/run.js
-- `POST()` --calls--> `gradeAll()`  [INFERRED]
-  src/app/api/submit/route.js → src/lib/grade.js
-- `POST()` --calls--> `runMeta()`  [INFERRED]
-  src/app/api/run/route.js → src/lib/engine/meta.js
 - `POST()` --calls--> `runQuery()`  [INFERRED]
   src/app/api/run/route.js → src/lib/engine/run.js
 - `ExamView()` --calls--> `formatDuration()`  [INFERRED]
   src/components/ExamView.js → src/lib/client.js
+- `POST()` --calls--> `gradeAll()`  [INFERRED]
+  src/app/api/submit/route.js → src/lib/grade.js
+- `POST()` --calls--> `runMeta()`  [INFERRED]
+  src/app/api/run/route.js → src/lib/engine/meta.js
 
-## Communities (17 total, 5 thin omitted)
+## Communities (18 total, 5 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.11
 Nodes (24): questions, DATASET_LABELS, TOPICS, buildExpected(), byId, gradeAll(), gradeOne(), hashRows() (+16 more)
 
 ### Community 1 - "Community 1"
-Cohesion: 0.13
-Nodes (20): getEngine(), runMeta(), astCache, containsMysql8Only(), MysqlError, OPT, parser, parseSelect() (+12 more)
+Cohesion: 0.19
+Nodes (15): astCache, containsMysql8Only(), MysqlError, OPT, parser, parseSelect(), tableNames(), toSqlite() (+7 more)
 
 ### Community 2 - "Community 2"
-Cohesion: 0.09
-Nodes (11): ExamView(), SqlEditor, useNow(), GLYPH, questionStatus(), STATUS_LABEL, BADGE, ResultPage() (+3 more)
+Cohesion: 0.13
+Nodes (5): BADGE, ResultPage(), SIZES, formatDuration(), schemaCache
 
 ### Community 3 - "Community 3"
 Cohesion: 0.11
@@ -83,8 +84,8 @@ Cohesion: 0.23
 Nodes (8): App(), COUNTS, clearState(), emptyState(), loadState(), probe(), saveState(), useExam()
 
 ### Community 6 - "Community 6"
-Cohesion: 0.25
-Nodes (8): dependencies, monaco-editor, @monaco-editor/react, next, node-sql-parser, react, react-dom, sql.js
+Cohesion: 0.22
+Nodes (9): dependencies, monaco-editor, @monaco-editor/react, next, node-sql-parser, react, react-dom, sql.js (+1 more)
 
 ### Community 7 - "Community 7"
 Cohesion: 0.29
@@ -99,27 +100,29 @@ Cohesion: 0.50
 Nodes (3): compilerOptions, paths, @/*
 
 ### Community 16 - "Community 16"
-Cohesion: 0.60
-Nodes (4): DATASETS, init(), readSchema(), register()
+Cohesion: 0.21
+Nodes (9): DATASETS, getEngine(), init(), readSchema(), register(), runMeta(), getSchema(), POST() (+1 more)
+
+### Community 17 - "Community 17"
+Cohesion: 0.19
+Nodes (6): ExamView(), SqlEditor, useNow(), GLYPH, questionStatus(), STATUS_LABEL
 
 ## Knowledge Gaps
-- **66 isolated node(s):** `@/*`, `regions`, `nextConfig`, `name`, `version` (+61 more)
+- **67 isolated node(s):** `@/*`, `regions`, `nextConfig`, `name`, `version` (+62 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **5 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `runQuery()` connect `Community 1` to `Community 0`?**
+- **Why does `runQuery()` connect `Community 1` to `Community 16`, `Community 0`?**
   _High betweenness centrality (0.019) - this node is a cross-community bridge._
 - **What connects `@/*`, `regions`, `nextConfig` to the rest of the system?**
-  _66 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _67 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.10887096774193548 - nodes in this community are weakly interconnected._
-- **Should `Community 1` be split into smaller, more focused modules?**
-  _Cohesion score 0.12807881773399016 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**
-  _Cohesion score 0.08547008547008547 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.13333333333333333 - nodes in this community are weakly interconnected._
 - **Should `Community 3` be split into smaller, more focused modules?**
   _Cohesion score 0.1111111111111111 - nodes in this community are weakly interconnected._
 - **Should `Community 4` be split into smaller, more focused modules?**

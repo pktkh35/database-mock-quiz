@@ -202,10 +202,19 @@
       "norm_label": "@monaco-editor/react"
     },
     {
-      "label": "monaco-editor",
+      "label": "@vercel/analytics",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L16",
+      "id": "database_mock_quiz_package_dependencies_vercel_analytics",
+      "community": 6,
+      "norm_label": "@vercel/analytics"
+    },
+    {
+      "label": "monaco-editor",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L17",
       "id": "database_mock_quiz_package_dependencies_monaco_editor",
       "community": 6,
       "norm_label": "monaco-editor"
@@ -214,7 +223,7 @@
       "label": "next",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L17",
+      "source_location": "L18",
       "id": "database_mock_quiz_package_dependencies_next",
       "community": 6,
       "norm_label": "next"
@@ -223,7 +232,7 @@
       "label": "node-sql-parser",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L18",
+      "source_location": "L19",
       "id": "database_mock_quiz_package_dependencies_node_sql_parser",
       "community": 6,
       "norm_label": "node-sql-parser"
@@ -232,7 +241,7 @@
       "label": "react",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L19",
+      "source_location": "L20",
       "id": "database_mock_quiz_package_dependencies_react",
       "community": 6,
       "norm_label": "react"
@@ -241,7 +250,7 @@
       "label": "react-dom",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L20",
+      "source_location": "L21",
       "id": "database_mock_quiz_package_dependencies_react_dom",
       "community": 6,
       "norm_label": "react-dom"
@@ -250,7 +259,7 @@
       "label": "sql.js",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L21",
+      "source_location": "L22",
       "id": "database_mock_quiz_package_dependencies_sql_js",
       "community": 6,
       "norm_label": "sql.js"
@@ -259,7 +268,7 @@
       "label": "devDependencies",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L23",
+      "source_location": "L24",
       "id": "database_mock_quiz_package_devdependencies",
       "community": 3,
       "norm_label": "devdependencies"
@@ -268,7 +277,7 @@
       "label": "@tailwindcss/turbopack",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L24",
+      "source_location": "L25",
       "id": "database_mock_quiz_package_devdependencies_tailwindcss_turbopack",
       "community": 3,
       "norm_label": "@tailwindcss/turbopack"
@@ -277,7 +286,7 @@
       "label": "tailwindcss",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L25",
+      "source_location": "L26",
       "id": "database_mock_quiz_package_devdependencies_tailwindcss",
       "community": 3,
       "norm_label": "tailwindcss"
@@ -286,7 +295,7 @@
       "label": "packageManager",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L27",
+      "source_location": "L28",
       "id": "database_mock_quiz_package_packagemanager",
       "community": 3,
       "norm_label": "packagemanager"
@@ -295,7 +304,7 @@
       "label": "ignoreScripts",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L28",
+      "source_location": "L29",
       "id": "database_mock_quiz_package_ignorescripts",
       "community": 3,
       "norm_label": "ignorescripts"
@@ -304,7 +313,7 @@
       "label": "trustedDependencies",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L32",
+      "source_location": "L33",
       "id": "database_mock_quiz_package_trusteddependencies",
       "community": 3,
       "norm_label": "trusteddependencies"
@@ -394,7 +403,7 @@
       "label": "geistSans",
       "file_type": "code",
       "source_file": "src/app/layout.js",
-      "source_location": "L4",
+      "source_location": "L5",
       "id": "app_layout_geistsans",
       "community": 7,
       "norm_label": "geistsans"
@@ -403,7 +412,7 @@
       "label": "geistMono",
       "file_type": "code",
       "source_file": "src/app/layout.js",
-      "source_location": "L5",
+      "source_location": "L6",
       "id": "app_layout_geistmono",
       "community": 7,
       "norm_label": "geistmono"
@@ -412,7 +421,7 @@
       "label": "notoThai",
       "file_type": "code",
       "source_file": "src/app/layout.js",
-      "source_location": "L6",
+      "source_location": "L7",
       "id": "app_layout_notothai",
       "community": 7,
       "norm_label": "notothai"
@@ -421,7 +430,7 @@
       "label": "metadata",
       "file_type": "code",
       "source_file": "src/app/layout.js",
-      "source_location": "L8",
+      "source_location": "L9",
       "id": "app_layout_metadata",
       "community": 7,
       "norm_label": "metadata"
@@ -430,7 +439,7 @@
       "label": "viewport",
       "file_type": "code",
       "source_file": "src/app/layout.js",
-      "source_location": "L13",
+      "source_location": "L14",
       "id": "app_layout_viewport",
       "community": 7,
       "norm_label": "viewport"
@@ -439,7 +448,7 @@
       "label": "RootLayout()",
       "file_type": "code",
       "source_file": "src/app/layout.js",
-      "source_location": "L15",
+      "source_location": "L16",
       "id": "app_layout_rootlayout",
       "community": 7,
       "norm_label": "rootlayout()"
@@ -486,7 +495,7 @@
       "source_file": "src/app/api/schema/route.js",
       "source_location": "L1",
       "id": "src_app_api_schema_route_js",
-      "community": 1,
+      "community": 16,
       "norm_label": "route.js"
     },
     {
@@ -495,7 +504,7 @@
       "source_file": "src/app/api/schema/route.js",
       "source_location": "L6",
       "id": "schema_route_get",
-      "community": 1,
+      "community": 16,
       "norm_label": "get()"
     },
     {
@@ -531,7 +540,7 @@
       "source_file": "src/app/api/run/route.js",
       "source_location": "L1",
       "id": "src_app_api_run_route_js",
-      "community": 1,
+      "community": 16,
       "norm_label": "route.js"
     },
     {
@@ -540,7 +549,7 @@
       "source_file": "src/app/api/run/route.js",
       "source_location": "L9",
       "id": "run_route_post",
-      "community": 1,
+      "community": 16,
       "norm_label": "post()"
     },
     {
@@ -549,7 +558,7 @@
       "source_file": "src/components/TablePanel.js",
       "source_location": "L1",
       "id": "src_components_tablepanel_js",
-      "community": 2,
+      "community": 17,
       "norm_label": "tablepanel.js"
     },
     {
@@ -558,7 +567,7 @@
       "source_file": "src/components/TablePanel.js",
       "source_location": "L3",
       "id": "components_tablepanel_tablepanel",
-      "community": 2,
+      "community": 17,
       "norm_label": "tablepanel()"
     },
     {
@@ -567,7 +576,7 @@
       "source_file": "src/components/ExamView.js",
       "source_location": "L1",
       "id": "src_components_examview_js",
-      "community": 2,
+      "community": 17,
       "norm_label": "examview.js"
     },
     {
@@ -576,7 +585,7 @@
       "source_file": "src/components/ExamView.js",
       "source_location": "L12",
       "id": "components_examview_sqleditor",
-      "community": 2,
+      "community": 17,
       "norm_label": "sqleditor"
     },
     {
@@ -585,7 +594,7 @@
       "source_file": "src/components/ExamView.js",
       "source_location": "L14",
       "id": "components_examview_usenow",
-      "community": 2,
+      "community": 17,
       "norm_label": "usenow()"
     },
     {
@@ -594,7 +603,7 @@
       "source_file": "src/components/ExamView.js",
       "source_location": "L24",
       "id": "components_examview_examview",
-      "community": 2,
+      "community": 17,
       "norm_label": "examview()"
     },
     {
@@ -643,10 +652,19 @@
       "norm_label": "sizes"
     },
     {
+      "label": "CanvasGrid()",
+      "file_type": "code",
+      "source_file": "src/components/ResultTable.js",
+      "source_location": "L13",
+      "id": "components_resulttable_canvasgrid",
+      "community": 2,
+      "norm_label": "canvasgrid()"
+    },
+    {
       "label": "ResultTable()",
       "file_type": "code",
       "source_file": "src/components/ResultTable.js",
-      "source_location": "L8",
+      "source_location": "L93",
       "id": "components_resulttable_resulttable",
       "community": 2,
       "norm_label": "resulttable()"
@@ -711,7 +729,7 @@
       "source_file": "src/components/ConfirmDialog.js",
       "source_location": "L1",
       "id": "src_components_confirmdialog_js",
-      "community": 2,
+      "community": 17,
       "norm_label": "confirmdialog.js"
     },
     {
@@ -720,7 +738,7 @@
       "source_file": "src/components/ConfirmDialog.js",
       "source_location": "L5",
       "id": "components_confirmdialog_confirmdialog",
-      "community": 2,
+      "community": 17,
       "norm_label": "confirmdialog()"
     },
     {
@@ -747,7 +765,7 @@
       "source_file": "src/components/QuestionNav.js",
       "source_location": "L1",
       "id": "src_components_questionnav_js",
-      "community": 2,
+      "community": 17,
       "norm_label": "questionnav.js"
     },
     {
@@ -756,7 +774,7 @@
       "source_file": "src/components/QuestionNav.js",
       "source_location": "L1",
       "id": "components_questionnav_questionstatus",
-      "community": 2,
+      "community": 17,
       "norm_label": "questionstatus()"
     },
     {
@@ -765,7 +783,7 @@
       "source_file": "src/components/QuestionNav.js",
       "source_location": "L7",
       "id": "components_questionnav_status_label",
-      "community": 2,
+      "community": 17,
       "norm_label": "status_label"
     },
     {
@@ -774,7 +792,7 @@
       "source_file": "src/components/QuestionNav.js",
       "source_location": "L8",
       "id": "components_questionnav_glyph",
-      "community": 2,
+      "community": 17,
       "norm_label": "glyph"
     },
     {
@@ -783,7 +801,7 @@
       "source_file": "src/components/QuestionNav.js",
       "source_location": "L10",
       "id": "components_questionnav_questionnav",
-      "community": 2,
+      "community": 17,
       "norm_label": "questionnav()"
     },
     {
@@ -1152,7 +1170,7 @@
       "source_file": "src/lib/engine/db.js",
       "source_location": "L97",
       "id": "engine_db_getengine",
-      "community": 1,
+      "community": 16,
       "norm_label": "getengine()"
     },
     {
@@ -1224,7 +1242,7 @@
       "source_file": "src/lib/engine/run.js",
       "source_location": "L153",
       "id": "engine_run_getschema",
-      "community": 1,
+      "community": 16,
       "norm_label": "getschema()"
     },
     {
@@ -1359,7 +1377,7 @@
       "source_file": "src/lib/engine/meta.js",
       "source_location": "L1",
       "id": "src_lib_engine_meta_js",
-      "community": 1,
+      "community": 16,
       "norm_label": "meta.js"
     },
     {
@@ -1368,7 +1386,7 @@
       "source_file": "src/lib/engine/meta.js",
       "source_location": "L4",
       "id": "engine_meta_runmeta",
-      "community": 1,
+      "community": 16,
       "norm_label": "runmeta()"
     },
     {
@@ -1927,6 +1945,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "database_mock_quiz_package_dependencies",
+      "target": "database_mock_quiz_package_dependencies_vercel_analytics",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
       "source_location": "L25",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -2478,6 +2506,16 @@
       "confidence_score": 1.0,
       "source": "src_components_resultpage_js",
       "target": "src_components_resulttable_js"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ResultTable.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "src_components_resulttable_js",
+      "target": "components_resulttable_canvasgrid",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -4159,5 +4197,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "3cac638835c4160e66583677dad2bb2af435f9af"
+  "built_at_commit": "c299aa4d19b1a7b692dd15224d0b465e3c64449c"
 }

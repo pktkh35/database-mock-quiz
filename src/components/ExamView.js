@@ -153,8 +153,8 @@ export default function ExamView({ exam, onSubmitted, onExit }) {
           <p className="text-lg leading-relaxed">{q.text}</p>
           {q.example?.rows && (
             <div className="space-y-2">
-              <p className="label">ตัวอย่างคำตอบ (ผลลัพธ์ที่ได้)</p>
-              <ResultTable columns={q.example.columns} rows={q.example.rows} scales={q.example.scales} paginate={false} />
+              <p className="label">ตัวอย่างผลลัพธ์{q.example.headerOnly ? ` (รูปแบบคอลัมน์ · ผลลัพธ์มี ${q.example.total} แถว)` : q.example.auto ? ` (2 แถวแรกจากทั้งหมด ${q.example.total} แถว)` : ""}</p>
+              <ResultTable columns={q.example.columns} rows={q.example.rows} scales={q.example.scales} paginate={false} emptyText={q.example.headerOnly ? "" : undefined} />
             </div>
           )}
         </section>
