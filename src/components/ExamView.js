@@ -150,7 +150,19 @@ export default function ExamView({ exam, onSubmitted, onExit }) {
             <span className="chip">{topic?.name}</span>
             <span className="chip font-mono">{q.dataset} · {DATASET_LABELS[q.dataset]}</span>
           </div>
-          <p className="text-lg leading-relaxed">{q.text}</p>
+          <p className="text-lg leading-relaxed">
+            {q.text.split(/\[\[(\w+)\]\]/).map((part, k) => {
+              if (k % 2 === 0) return part;
+              const idx = questionIds.indexOf(part);
+              return idx < 0 ? (
+                <span key={k} className="text-muted">ข้ออื่น</span>
+              ) : (
+                <button key={k} onClick={() => exam.goto(idx)} className="mx-0.5 rounded-md border border-primary px-1.5 text-sm font-semibold text-primary-strong hover:bg-primary-soft">
+                  ข้อ {idx + 1}
+                </button>
+              );
+            })}
+          </p>
           {q.example?.rows && (
             <div className="space-y-2">
               <p className="label">ตัวอย่างผลลัพธ์{q.example.headerOnly ? ` (รูปแบบคอลัมน์ · ผลลัพธ์มี ${q.example.total} แถว)` : q.example.auto ? ` (2 แถวแรกจากทั้งหมด ${q.example.total} แถว)` : ""}</p>

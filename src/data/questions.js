@@ -89,7 +89,8 @@ export const questions = [
   },
   {
     id: "s13", topic: "select", dataset: "hr",
-    text: "แสดงนามสกุล รหัสงาน และเงินเดือน ของพนักงานที่เป็นตัวแทนขาย (SA_REP) หรือประธานบริษัท (AD_PRES) ก็ได้ แต่ทุกคนต้องมีเงินเดือนเกิน 15,000",
+    refs: ["s12"],
+    text: "ทำรายงานคล้าย [[s12]] แต่เปลี่ยนความหมาย: พนักงานที่เป็นตัวแทนขาย (SA_REP) หรือประธานบริษัท (AD_PRES) ก็ได้ แต่ทุกคนต้องมีเงินเดือนเกิน 15,000",
     objective: "ใช้วงเล็บบังคับให้ OR ถูกประมวลผลก่อน AND",
     rules: { require: ["OR", "AND"] },
     sql: "SELECT last_name, job_id, salary FROM employees WHERE (job_id = 'SA_REP' OR job_id = 'AD_PRES') AND salary > 15000",
@@ -690,7 +691,8 @@ export const questions = [
   },
   {
     id: "o02", topic: "outer", dataset: "hr",
-    text: "ทำรายงานเดียวกับข้อก่อน (พนักงานทุกคนพร้อมชื่อแผนก รวมคนที่ไม่มีแผนก) แต่ให้เขียนโดยวางตารางแผนกไว้ทางซ้าย และยึดตารางพนักงานทางขวาเป็นหลัก",
+    refs: ["o01"],
+    text: "ทำรายงานเดียวกับ [[o01]] (พนักงานทุกคนพร้อมชื่อแผนก รวมคนที่ไม่มีแผนก) แต่ให้เขียนโดยวางตารางแผนกไว้ทางซ้าย และยึดตารางพนักงานทางขวาเป็นหลัก",
     objective: "ใช้ RIGHT OUTER JOIN โดยสลับตำแหน่งตารางให้ได้ผลเหมือน LEFT JOIN",
     rules: { require: ["RIGHT JOIN"], forbid: ["LEFT JOIN"] },
     sql: "SELECT e.last_name, d.department_name FROM departments d RIGHT OUTER JOIN employees e ON (e.department_id = d.department_id)",
@@ -698,7 +700,8 @@ export const questions = [
   },
   {
     id: "o04", topic: "outer", dataset: "hr",
-    text: "แสดงชื่อแผนกที่ยังไม่มีพนักงานเลย เขียนโดยวางตารางแผนกไว้ทางซ้ายและยึดเป็นหลัก (ไม่ต้องซ้อนคำสั่งย่อย)",
+    refs: ["o03"],
+    text: "ทำรายงานเดียวกับ [[o03]] (ชื่อแผนกที่ยังไม่มีพนักงานเลย) แต่เขียนโดยวางตารางแผนกไว้ทางซ้ายและยึดเป็นหลัก (ไม่ต้องซ้อนคำสั่งย่อย)",
     objective: "ใช้ LEFT OUTER JOIN + IS NULL หาแถวฝั่งซ้ายที่ไม่มีคู่ (ไม่ใช้ subquery)",
     rules: { require: ["LEFT JOIN", "IS NULL"], forbid: ["SUBQUERY", "RIGHT JOIN"] },
     sql: "SELECT d.department_name FROM departments d LEFT OUTER JOIN employees e ON (d.department_id = e.department_id) WHERE e.department_id IS NULL",

@@ -355,10 +355,19 @@
       "norm_label": "ids"
     },
     {
+      "label": "allIds",
+      "file_type": "code",
+      "source_file": "scripts/check.mjs",
+      "source_location": "L13",
+      "id": "scripts_check_allids",
+      "community": 0,
+      "norm_label": "allids"
+    },
+    {
       "label": "rows",
       "file_type": "code",
       "source_file": "scripts/check.mjs",
-      "source_location": "L27",
+      "source_location": "L32",
       "id": "scripts_check_rows",
       "community": 0,
       "norm_label": "rows"
@@ -367,7 +376,7 @@
       "label": "r",
       "file_type": "code",
       "source_file": "scripts/check.mjs",
-      "source_location": "L32",
+      "source_location": "L37",
       "id": "scripts_check_r",
       "community": 0,
       "norm_label": "r"
@@ -376,7 +385,7 @@
       "label": "times",
       "file_type": "code",
       "source_file": "scripts/check.mjs",
-      "source_location": "L47",
+      "source_location": "L52",
       "id": "scripts_check_times",
       "community": 0,
       "norm_label": "times"
@@ -385,7 +394,7 @@
       "label": "t0",
       "file_type": "code",
       "source_file": "scripts/check.mjs",
-      "source_location": "L50",
+      "source_location": "L55",
       "id": "scripts_check_t0",
       "community": 0,
       "norm_label": "t0"
@@ -1411,7 +1420,7 @@
       "label": "publicQuestion()",
       "file_type": "code",
       "source_file": "src/data/questions.js",
-      "source_location": "L902",
+      "source_location": "L905",
       "id": "data_questions_publicquestion",
       "community": 0,
       "norm_label": "publicquestion()"
@@ -1947,9 +1956,9 @@
       "source_file": "package.json",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "database_mock_quiz_package_dependencies",
-      "target": "database_mock_quiz_package_dependencies_vercel_analytics",
-      "confidence_score": 1.0
+      "target": "database_mock_quiz_package_dependencies_vercel_analytics"
     },
     {
       "relation": "contains",
@@ -2036,6 +2045,16 @@
       "confidence_score": 1.0,
       "source": "scripts_check_mjs",
       "target": "lib_rules_checkrules"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/check.mjs",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "scripts_check_mjs",
+      "target": "scripts_check_allids",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -2513,9 +2532,9 @@
       "source_file": "src/components/ResultTable.js",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_resulttable_js",
-      "target": "components_resulttable_canvasgrid",
-      "confidence_score": 1.0
+      "target": "components_resulttable_canvasgrid"
     },
     {
       "relation": "contains",
@@ -4197,5 +4216,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "c299aa4d19b1a7b692dd15224d0b465e3c64449c"
+  "built_at_commit": "9cf5ddf4ef742cb93c7a9527f36be96577ca1df1"
 }

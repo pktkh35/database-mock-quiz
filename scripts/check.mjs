@@ -10,8 +10,13 @@ const problems = [];
 const expected = {};
 const ids = new Set();
 
+const allIds = new Set(questions.map((q) => q.id));
 for (const q of questions) {
   const tag = `[${q.id}]`;
+  for (const m of q.text.matchAll(/\[\[(\w+)\]\]/g)) {
+    if (!allIds.has(m[1])) problems.push(`${tag} อ้างถึงข้อที่ไม่มี: ${m[1]}`);
+    if (!(q.refs ?? []).includes(m[1])) problems.push(`${tag} อ้างถึง ${m[1]} ในโจทย์ แต่ไม่ได้ใส่ใน refs`);
+  }
   if (ids.has(q.id)) problems.push(`${tag} id ซ้ำ`);
   ids.add(q.id);
   if (!q.objective || q.objective.length < 10) problems.push(`${tag} ไม่มี objective (วัตถุประสงค์ของโจทย์)`);

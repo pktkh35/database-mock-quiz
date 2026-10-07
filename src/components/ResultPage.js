@@ -54,7 +54,7 @@ export default function ResultPage({ result, onRestart }) {
                       <span aria-hidden>{b.icon}</span> {b.text}
                     </span>
                     <span className="min-w-0 flex-1">
-                      <span className="block text-sm"><b>ข้อ {i + 1}</b> · {it.text}</span>
+                      <span className="block text-sm"><b>ข้อ {i + 1}</b> · {it.text.replace(/\[\[(\w+)\]\]/g, (_, id) => { const n = items.findIndex((x) => x.id === id); return n < 0 ? "ข้ออื่น" : `ข้อ ${n + 1}`; })}</span>
                       {it.reason && <span className="mt-0.5 block text-xs text-muted">{it.reason}</span>}
                     </span>
                     <span aria-hidden className="text-muted transition-transform group-open:rotate-90">›</span>

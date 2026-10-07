@@ -52,10 +52,22 @@ export async function GET(request) {
       if (p.length) picked.push(p.splice(i, 1)[0]);
     }
   }
-  const out = await Promise.all(shuffle(picked).map(withExample));
+  // A question that refers to another one ([[id]]) brings that question into the exam too.
+  const byId = new Map(questions.map((q) => [q.id, q]));
+  const chosen = new Map(picked.map((q) => [q.id, q]));
+  const needed = new Set();
+  for (const q of picked) for (const id of q.refs ?? []) if (byId.has(id)) needed.add(id);
+  for (const id of needed) chosen.set(id, byId.get(id));
+  // keep the requested size: drop non-required extras (never a referenced question or the one referring to it)
+  const holders = new Set([...chosen.values()].filter((q) => (q.refs ?? []).length).map((q) => q.id));
+  for (const q of shuffle([...chosen.values()])) {
+    if (chosen.size <= count) break;
+    if (!needed.has(q.id) && !holders.has(q.id)) chosen.delete(q.id);
+  }
+  const out = await Promise.all(shuffle([...chosen.values()]).map(withExample));
   return Response.json({
     questions: out,
     requested: count,
-    shortage: picked.length < count,
+    shortage: out.length < count,
   });
 }

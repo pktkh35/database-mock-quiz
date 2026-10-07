@@ -1,16 +1,16 @@
 # Graph Report - database-mock-quiz  (2026-10-07)
 
 ## Corpus Check
-- 40 files · ~20,619 words
+- 40 files · ~20,836 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 184 nodes · 244 edges · 18 communities (13 shown, 5 thin omitted)
+- 185 nodes · 245 edges · 18 communities (13 shown, 5 thin omitted)
 - Extraction: 97% EXTRACTED · 3% INFERRED · 0% AMBIGUOUS · INFERRED: 7 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `c299aa4d`
+- Built from commit: `9cf5ddf4`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -60,8 +60,8 @@
 ## Communities (18 total, 5 thin omitted)
 
 ### Community 0 - "Community 0"
-Cohesion: 0.11
-Nodes (24): questions, DATASET_LABELS, TOPICS, buildExpected(), byId, gradeAll(), gradeOne(), hashRows() (+16 more)
+Cohesion: 0.10
+Nodes (25): questions, DATASET_LABELS, TOPICS, buildExpected(), byId, gradeAll(), gradeOne(), hashRows() (+17 more)
 
 ### Community 1 - "Community 1"
 Cohesion: 0.19
@@ -108,7 +108,7 @@ Cohesion: 0.19
 Nodes (6): ExamView(), SqlEditor, useNow(), GLYPH, questionStatus(), STATUS_LABEL
 
 ## Knowledge Gaps
-- **67 isolated node(s):** `@/*`, `regions`, `nextConfig`, `name`, `version` (+62 more)
+- **68 isolated node(s):** `@/*`, `regions`, `nextConfig`, `name`, `version` (+63 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **5 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -118,9 +118,9 @@ _Questions this graph is uniquely positioned to answer:_
 - **Why does `runQuery()` connect `Community 1` to `Community 16`, `Community 0`?**
   _High betweenness centrality (0.019) - this node is a cross-community bridge._
 - **What connects `@/*`, `regions`, `nextConfig` to the rest of the system?**
-  _67 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _68 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
-  _Cohesion score 0.10887096774193548 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.10416666666666667 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**
   _Cohesion score 0.13333333333333333 - nodes in this community are weakly interconnected._
 - **Should `Community 3` be split into smaller, more focused modules?**

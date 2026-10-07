@@ -20,8 +20,8 @@
     "semantic_hash": ""
   },
   "/Users/pktkh35/Documents/GitHub/database-mock-quiz/scripts/check.mjs": {
-    "mtime": 1791351133.5443838,
-    "ast_hash": "853db1811e4de83168b59e7aacb99948",
+    "mtime": 1791352092.2534518,
+    "ast_hash": "911516269a47557ec4b7d1027e57db25",
     "semantic_hash": ""
   },
   "/Users/pktkh35/Documents/GitHub/database-mock-quiz/src/app/layout.js": {
@@ -45,8 +45,8 @@
     "semantic_hash": ""
   },
   "/Users/pktkh35/Documents/GitHub/database-mock-quiz/src/app/api/exam/route.js": {
-    "mtime": 1791351846.9787953,
-    "ast_hash": "6ef63b1468a44ee51957998bd8cd9ef3",
+    "mtime": 1791352083.5362074,
+    "ast_hash": "2b20539db988b035dc36d38908f76550",
     "semantic_hash": ""
   },
   "/Users/pktkh35/Documents/GitHub/database-mock-quiz/src/app/api/run/route.js": {
@@ -55,8 +55,8 @@
     "semantic_hash": ""
   },
   "/Users/pktkh35/Documents/GitHub/database-mock-quiz/src/components/ExamView.js": {
-    "mtime": 1791351846.9800289,
-    "ast_hash": "c4f991fbd4805aea723b0b61d713969d",
+    "mtime": 1791352083.5365582,
+    "ast_hash": "5ade4447be13709b9a87a9ebee2e522c",
     "semantic_hash": ""
   },
   "/Users/pktkh35/Documents/GitHub/database-mock-quiz/src/components/TopicPicker.js": {
@@ -90,8 +90,8 @@
     "semantic_hash": ""
   },
   "/Users/pktkh35/Documents/GitHub/database-mock-quiz/src/components/ResultPage.js": {
-    "mtime": 1791351140.447725,
-    "ast_hash": "5a763634e0d96642ee48c6f0a9e17ba1",
+    "mtime": 1791352083.5368998,
+    "ast_hash": "b6f5ebec3f93119e69590ed2eb42da0c",
     "semantic_hash": ""
   },
   "/Users/pktkh35/Documents/GitHub/database-mock-quiz/src/lib/useExam.js": {
@@ -135,8 +135,8 @@
     "semantic_hash": ""
   },
   "/Users/pktkh35/Documents/GitHub/database-mock-quiz/src/data/questions.js": {
-    "mtime": 1791351133.5441358,
-    "ast_hash": "ed3000d5eeab1e84c8dc9ab5af994066",
+    "mtime": 1791352083.5358574,
+    "ast_hash": "da06e80d123e5ac0531cc14bce001b59",
     "semantic_hash": ""
   },
   "/Users/pktkh35/Documents/GitHub/database-mock-quiz/src/data/topics.js": {
