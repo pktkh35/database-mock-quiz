@@ -1,0 +1,4163 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "jsconfig.json",
+      "file_type": "code",
+      "source_file": "jsconfig.json",
+      "source_location": "L1",
+      "id": "jsconfig_json",
+      "community": 10,
+      "norm_label": "jsconfig.json"
+    },
+    {
+      "label": "compilerOptions",
+      "file_type": "code",
+      "source_file": "jsconfig.json",
+      "source_location": "L2",
+      "id": "database_mock_quiz_jsconfig_compileroptions",
+      "community": 10,
+      "norm_label": "compileroptions"
+    },
+    {
+      "label": "paths",
+      "file_type": "code",
+      "source_file": "jsconfig.json",
+      "source_location": "L3",
+      "id": "database_mock_quiz_jsconfig_compileroptions_paths",
+      "community": 10,
+      "norm_label": "paths"
+    },
+    {
+      "label": "@/*",
+      "file_type": "code",
+      "source_file": "jsconfig.json",
+      "source_location": "L4",
+      "id": "database_mock_quiz_jsconfig_paths",
+      "community": 10,
+      "norm_label": "@/*"
+    },
+    {
+      "label": "vercel.json",
+      "file_type": "code",
+      "source_file": "vercel.json",
+      "source_location": "L1",
+      "id": "vercel_json",
+      "community": 15,
+      "norm_label": "vercel.json"
+    },
+    {
+      "label": "regions",
+      "file_type": "code",
+      "source_file": "vercel.json",
+      "source_location": "L1",
+      "id": "database_mock_quiz_vercel_regions",
+      "community": 15,
+      "norm_label": "regions"
+    },
+    {
+      "label": "next.config.mjs",
+      "file_type": "code",
+      "source_file": "next.config.mjs",
+      "source_location": "L1",
+      "id": "next_config_mjs",
+      "community": 14,
+      "norm_label": "next.config.mjs"
+    },
+    {
+      "label": "nextConfig",
+      "file_type": "code",
+      "source_file": "next.config.mjs",
+      "source_location": "L2",
+      "id": "database_mock_quiz_next_config_nextconfig",
+      "community": 14,
+      "norm_label": "nextconfig"
+    },
+    {
+      "label": "package.json",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L1",
+      "id": "package_json",
+      "community": 3,
+      "norm_label": "package.json"
+    },
+    {
+      "label": "name",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L2",
+      "id": "database_mock_quiz_package_name",
+      "community": 3,
+      "norm_label": "name"
+    },
+    {
+      "label": "version",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L3",
+      "id": "database_mock_quiz_package_version",
+      "community": 3,
+      "norm_label": "version"
+    },
+    {
+      "label": "private",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L4",
+      "id": "database_mock_quiz_package_private",
+      "community": 3,
+      "norm_label": "private"
+    },
+    {
+      "label": "type",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L5",
+      "id": "database_mock_quiz_package_type",
+      "community": 3,
+      "norm_label": "type"
+    },
+    {
+      "label": "scripts",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L6",
+      "id": "database_mock_quiz_package_scripts",
+      "community": 3,
+      "norm_label": "scripts"
+    },
+    {
+      "label": "dev",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L7",
+      "id": "database_mock_quiz_package_scripts_dev",
+      "community": 3,
+      "norm_label": "dev"
+    },
+    {
+      "label": "build",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L8",
+      "id": "database_mock_quiz_package_scripts_build",
+      "community": 3,
+      "norm_label": "build"
+    },
+    {
+      "label": "start",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L9",
+      "id": "database_mock_quiz_package_scripts_start",
+      "community": 3,
+      "norm_label": "start"
+    },
+    {
+      "label": "check",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L10",
+      "id": "database_mock_quiz_package_scripts_check",
+      "community": 3,
+      "norm_label": "check"
+    },
+    {
+      "label": "predev",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L11",
+      "id": "database_mock_quiz_package_scripts_predev",
+      "community": 3,
+      "norm_label": "predev"
+    },
+    {
+      "label": "prebuild",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L12",
+      "id": "database_mock_quiz_package_scripts_prebuild",
+      "community": 3,
+      "norm_label": "prebuild"
+    },
+    {
+      "label": "dependencies",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L14",
+      "id": "database_mock_quiz_package_dependencies",
+      "community": 6,
+      "norm_label": "dependencies"
+    },
+    {
+      "label": "@monaco-editor/react",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L15",
+      "id": "database_mock_quiz_package_dependencies_monaco_editor_react",
+      "community": 6,
+      "norm_label": "@monaco-editor/react"
+    },
+    {
+      "label": "monaco-editor",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L16",
+      "id": "database_mock_quiz_package_dependencies_monaco_editor",
+      "community": 6,
+      "norm_label": "monaco-editor"
+    },
+    {
+      "label": "next",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L17",
+      "id": "database_mock_quiz_package_dependencies_next",
+      "community": 6,
+      "norm_label": "next"
+    },
+    {
+      "label": "node-sql-parser",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L18",
+      "id": "database_mock_quiz_package_dependencies_node_sql_parser",
+      "community": 6,
+      "norm_label": "node-sql-parser"
+    },
+    {
+      "label": "react",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L19",
+      "id": "database_mock_quiz_package_dependencies_react",
+      "community": 6,
+      "norm_label": "react"
+    },
+    {
+      "label": "react-dom",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L20",
+      "id": "database_mock_quiz_package_dependencies_react_dom",
+      "community": 6,
+      "norm_label": "react-dom"
+    },
+    {
+      "label": "sql.js",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L21",
+      "id": "database_mock_quiz_package_dependencies_sql_js",
+      "community": 6,
+      "norm_label": "sql.js"
+    },
+    {
+      "label": "devDependencies",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L23",
+      "id": "database_mock_quiz_package_devdependencies",
+      "community": 3,
+      "norm_label": "devdependencies"
+    },
+    {
+      "label": "@tailwindcss/turbopack",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L24",
+      "id": "database_mock_quiz_package_devdependencies_tailwindcss_turbopack",
+      "community": 3,
+      "norm_label": "@tailwindcss/turbopack"
+    },
+    {
+      "label": "tailwindcss",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L25",
+      "id": "database_mock_quiz_package_devdependencies_tailwindcss",
+      "community": 3,
+      "norm_label": "tailwindcss"
+    },
+    {
+      "label": "packageManager",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L27",
+      "id": "database_mock_quiz_package_packagemanager",
+      "community": 3,
+      "norm_label": "packagemanager"
+    },
+    {
+      "label": "ignoreScripts",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L28",
+      "id": "database_mock_quiz_package_ignorescripts",
+      "community": 3,
+      "norm_label": "ignorescripts"
+    },
+    {
+      "label": "trustedDependencies",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L32",
+      "id": "database_mock_quiz_package_trusteddependencies",
+      "community": 3,
+      "norm_label": "trusteddependencies"
+    },
+    {
+      "label": "check.mjs",
+      "file_type": "code",
+      "source_file": "scripts/check.mjs",
+      "source_location": "L1",
+      "id": "scripts_check_mjs",
+      "community": 0,
+      "norm_label": "check.mjs"
+    },
+    {
+      "label": "problems",
+      "file_type": "code",
+      "source_file": "scripts/check.mjs",
+      "source_location": "L9",
+      "id": "scripts_check_problems",
+      "community": 0,
+      "norm_label": "problems"
+    },
+    {
+      "label": "expected",
+      "file_type": "code",
+      "source_file": "scripts/check.mjs",
+      "source_location": "L10",
+      "id": "scripts_check_expected",
+      "community": 0,
+      "norm_label": "expected"
+    },
+    {
+      "label": "ids",
+      "file_type": "code",
+      "source_file": "scripts/check.mjs",
+      "source_location": "L11",
+      "id": "scripts_check_ids",
+      "community": 0,
+      "norm_label": "ids"
+    },
+    {
+      "label": "rows",
+      "file_type": "code",
+      "source_file": "scripts/check.mjs",
+      "source_location": "L27",
+      "id": "scripts_check_rows",
+      "community": 0,
+      "norm_label": "rows"
+    },
+    {
+      "label": "r",
+      "file_type": "code",
+      "source_file": "scripts/check.mjs",
+      "source_location": "L32",
+      "id": "scripts_check_r",
+      "community": 0,
+      "norm_label": "r"
+    },
+    {
+      "label": "times",
+      "file_type": "code",
+      "source_file": "scripts/check.mjs",
+      "source_location": "L47",
+      "id": "scripts_check_times",
+      "community": 0,
+      "norm_label": "times"
+    },
+    {
+      "label": "t0",
+      "file_type": "code",
+      "source_file": "scripts/check.mjs",
+      "source_location": "L50",
+      "id": "scripts_check_t0",
+      "community": 0,
+      "norm_label": "t0"
+    },
+    {
+      "label": "layout.js",
+      "file_type": "code",
+      "source_file": "src/app/layout.js",
+      "source_location": "L1",
+      "id": "src_app_layout_js",
+      "community": 7,
+      "norm_label": "layout.js"
+    },
+    {
+      "label": "geistSans",
+      "file_type": "code",
+      "source_file": "src/app/layout.js",
+      "source_location": "L4",
+      "id": "app_layout_geistsans",
+      "community": 7,
+      "norm_label": "geistsans"
+    },
+    {
+      "label": "geistMono",
+      "file_type": "code",
+      "source_file": "src/app/layout.js",
+      "source_location": "L5",
+      "id": "app_layout_geistmono",
+      "community": 7,
+      "norm_label": "geistmono"
+    },
+    {
+      "label": "notoThai",
+      "file_type": "code",
+      "source_file": "src/app/layout.js",
+      "source_location": "L6",
+      "id": "app_layout_notothai",
+      "community": 7,
+      "norm_label": "notothai"
+    },
+    {
+      "label": "metadata",
+      "file_type": "code",
+      "source_file": "src/app/layout.js",
+      "source_location": "L8",
+      "id": "app_layout_metadata",
+      "community": 7,
+      "norm_label": "metadata"
+    },
+    {
+      "label": "viewport",
+      "file_type": "code",
+      "source_file": "src/app/layout.js",
+      "source_location": "L13",
+      "id": "app_layout_viewport",
+      "community": 7,
+      "norm_label": "viewport"
+    },
+    {
+      "label": "RootLayout()",
+      "file_type": "code",
+      "source_file": "src/app/layout.js",
+      "source_location": "L15",
+      "id": "app_layout_rootlayout",
+      "community": 7,
+      "norm_label": "rootlayout()"
+    },
+    {
+      "label": "page.js",
+      "file_type": "code",
+      "source_file": "src/app/page.js",
+      "source_location": "L1",
+      "id": "src_app_page_js",
+      "community": 12,
+      "norm_label": "page.js"
+    },
+    {
+      "label": "Home()",
+      "file_type": "code",
+      "source_file": "src/app/page.js",
+      "source_location": "L3",
+      "id": "app_page_home",
+      "community": 12,
+      "norm_label": "home()"
+    },
+    {
+      "label": "route.js",
+      "file_type": "code",
+      "source_file": "src/app/api/submit/route.js",
+      "source_location": "L1",
+      "id": "src_app_api_submit_route_js",
+      "community": 0,
+      "norm_label": "route.js"
+    },
+    {
+      "label": "POST()",
+      "file_type": "code",
+      "source_file": "src/app/api/submit/route.js",
+      "source_location": "L6",
+      "id": "submit_route_post",
+      "community": 0,
+      "norm_label": "post()"
+    },
+    {
+      "label": "route.js",
+      "file_type": "code",
+      "source_file": "src/app/api/schema/route.js",
+      "source_location": "L1",
+      "id": "src_app_api_schema_route_js",
+      "community": 1,
+      "norm_label": "route.js"
+    },
+    {
+      "label": "GET()",
+      "file_type": "code",
+      "source_file": "src/app/api/schema/route.js",
+      "source_location": "L6",
+      "id": "schema_route_get",
+      "community": 1,
+      "norm_label": "get()"
+    },
+    {
+      "label": "route.js",
+      "file_type": "code",
+      "source_file": "src/app/api/exam/route.js",
+      "source_location": "L1",
+      "id": "src_app_api_exam_route_js",
+      "community": 11,
+      "norm_label": "route.js"
+    },
+    {
+      "label": "shuffle()",
+      "file_type": "code",
+      "source_file": "src/app/api/exam/route.js",
+      "source_location": "L7",
+      "id": "exam_route_shuffle",
+      "community": 11,
+      "norm_label": "shuffle()"
+    },
+    {
+      "label": "GET()",
+      "file_type": "code",
+      "source_file": "src/app/api/exam/route.js",
+      "source_location": "L16",
+      "id": "exam_route_get",
+      "community": 11,
+      "norm_label": "get()"
+    },
+    {
+      "label": "route.js",
+      "file_type": "code",
+      "source_file": "src/app/api/run/route.js",
+      "source_location": "L1",
+      "id": "src_app_api_run_route_js",
+      "community": 1,
+      "norm_label": "route.js"
+    },
+    {
+      "label": "POST()",
+      "file_type": "code",
+      "source_file": "src/app/api/run/route.js",
+      "source_location": "L9",
+      "id": "run_route_post",
+      "community": 1,
+      "norm_label": "post()"
+    },
+    {
+      "label": "TablePanel.js",
+      "file_type": "code",
+      "source_file": "src/components/TablePanel.js",
+      "source_location": "L1",
+      "id": "src_components_tablepanel_js",
+      "community": 2,
+      "norm_label": "tablepanel.js"
+    },
+    {
+      "label": "TablePanel()",
+      "file_type": "code",
+      "source_file": "src/components/TablePanel.js",
+      "source_location": "L3",
+      "id": "components_tablepanel_tablepanel",
+      "community": 2,
+      "norm_label": "tablepanel()"
+    },
+    {
+      "label": "ExamView.js",
+      "file_type": "code",
+      "source_file": "src/components/ExamView.js",
+      "source_location": "L1",
+      "id": "src_components_examview_js",
+      "community": 2,
+      "norm_label": "examview.js"
+    },
+    {
+      "label": "SqlEditor",
+      "file_type": "code",
+      "source_file": "src/components/ExamView.js",
+      "source_location": "L12",
+      "id": "components_examview_sqleditor",
+      "community": 2,
+      "norm_label": "sqleditor"
+    },
+    {
+      "label": "useNow()",
+      "file_type": "code",
+      "source_file": "src/components/ExamView.js",
+      "source_location": "L14",
+      "id": "components_examview_usenow",
+      "community": 2,
+      "norm_label": "usenow()"
+    },
+    {
+      "label": "ExamView()",
+      "file_type": "code",
+      "source_file": "src/components/ExamView.js",
+      "source_location": "L24",
+      "id": "components_examview_examview",
+      "community": 2,
+      "norm_label": "examview()"
+    },
+    {
+      "label": "TopicPicker.js",
+      "file_type": "code",
+      "source_file": "src/components/TopicPicker.js",
+      "source_location": "L1",
+      "id": "src_components_topicpicker_js",
+      "community": 5,
+      "norm_label": "topicpicker.js"
+    },
+    {
+      "label": "COUNTS",
+      "file_type": "code",
+      "source_file": "src/components/TopicPicker.js",
+      "source_location": "L6",
+      "id": "components_topicpicker_counts",
+      "community": 5,
+      "norm_label": "counts"
+    },
+    {
+      "label": "TopicPicker()",
+      "file_type": "code",
+      "source_file": "src/components/TopicPicker.js",
+      "source_location": "L9",
+      "id": "components_topicpicker_topicpicker",
+      "community": 5,
+      "norm_label": "topicpicker()"
+    },
+    {
+      "label": "ResultTable.js",
+      "file_type": "code",
+      "source_file": "src/components/ResultTable.js",
+      "source_location": "L1",
+      "id": "src_components_resulttable_js",
+      "community": 2,
+      "norm_label": "resulttable.js"
+    },
+    {
+      "label": "SIZES",
+      "file_type": "code",
+      "source_file": "src/components/ResultTable.js",
+      "source_location": "L6",
+      "id": "components_resulttable_sizes",
+      "community": 2,
+      "norm_label": "sizes"
+    },
+    {
+      "label": "ResultTable()",
+      "file_type": "code",
+      "source_file": "src/components/ResultTable.js",
+      "source_location": "L8",
+      "id": "components_resulttable_resulttable",
+      "community": 2,
+      "norm_label": "resulttable()"
+    },
+    {
+      "label": "SqlEditor.js",
+      "file_type": "code",
+      "source_file": "src/components/SqlEditor.js",
+      "source_location": "L1",
+      "id": "src_components_sqleditor_js",
+      "community": 8,
+      "norm_label": "sqleditor.js"
+    },
+    {
+      "label": "KEYWORDS",
+      "file_type": "code",
+      "source_file": "src/components/SqlEditor.js",
+      "source_location": "L15",
+      "id": "components_sqleditor_keywords",
+      "community": 8,
+      "norm_label": "keywords"
+    },
+    {
+      "label": "schemaRef",
+      "file_type": "code",
+      "source_file": "src/components/SqlEditor.js",
+      "source_location": "L23",
+      "id": "components_sqleditor_schemaref",
+      "community": 8,
+      "norm_label": "schemaref"
+    },
+    {
+      "label": "registerCompletion()",
+      "file_type": "code",
+      "source_file": "src/components/SqlEditor.js",
+      "source_location": "L26",
+      "id": "components_sqleditor_registercompletion",
+      "community": 8,
+      "norm_label": "registercompletion()"
+    },
+    {
+      "label": "defineThemes()",
+      "file_type": "code",
+      "source_file": "src/components/SqlEditor.js",
+      "source_location": "L51",
+      "id": "components_sqleditor_definethemes",
+      "community": 8,
+      "norm_label": "definethemes()"
+    },
+    {
+      "label": "SqlEditor()",
+      "file_type": "code",
+      "source_file": "src/components/SqlEditor.js",
+      "source_location": "L69",
+      "id": "components_sqleditor_sqleditor",
+      "community": 8,
+      "norm_label": "sqleditor()"
+    },
+    {
+      "label": "ConfirmDialog.js",
+      "file_type": "code",
+      "source_file": "src/components/ConfirmDialog.js",
+      "source_location": "L1",
+      "id": "src_components_confirmdialog_js",
+      "community": 2,
+      "norm_label": "confirmdialog.js"
+    },
+    {
+      "label": "ConfirmDialog()",
+      "file_type": "code",
+      "source_file": "src/components/ConfirmDialog.js",
+      "source_location": "L5",
+      "id": "components_confirmdialog_confirmdialog",
+      "community": 2,
+      "norm_label": "confirmdialog()"
+    },
+    {
+      "label": "App.js",
+      "file_type": "code",
+      "source_file": "src/components/App.js",
+      "source_location": "L1",
+      "id": "src_components_app_js",
+      "community": 5,
+      "norm_label": "app.js"
+    },
+    {
+      "label": "App()",
+      "file_type": "code",
+      "source_file": "src/components/App.js",
+      "source_location": "L9",
+      "id": "components_app_app",
+      "community": 5,
+      "norm_label": "app()"
+    },
+    {
+      "label": "QuestionNav.js",
+      "file_type": "code",
+      "source_file": "src/components/QuestionNav.js",
+      "source_location": "L1",
+      "id": "src_components_questionnav_js",
+      "community": 2,
+      "norm_label": "questionnav.js"
+    },
+    {
+      "label": "questionStatus()",
+      "file_type": "code",
+      "source_file": "src/components/QuestionNav.js",
+      "source_location": "L1",
+      "id": "components_questionnav_questionstatus",
+      "community": 2,
+      "norm_label": "questionstatus()"
+    },
+    {
+      "label": "STATUS_LABEL",
+      "file_type": "code",
+      "source_file": "src/components/QuestionNav.js",
+      "source_location": "L7",
+      "id": "components_questionnav_status_label",
+      "community": 2,
+      "norm_label": "status_label"
+    },
+    {
+      "label": "GLYPH",
+      "file_type": "code",
+      "source_file": "src/components/QuestionNav.js",
+      "source_location": "L8",
+      "id": "components_questionnav_glyph",
+      "community": 2,
+      "norm_label": "glyph"
+    },
+    {
+      "label": "QuestionNav()",
+      "file_type": "code",
+      "source_file": "src/components/QuestionNav.js",
+      "source_location": "L10",
+      "id": "components_questionnav_questionnav",
+      "community": 2,
+      "norm_label": "questionnav()"
+    },
+    {
+      "label": "ResultPage.js",
+      "file_type": "code",
+      "source_file": "src/components/ResultPage.js",
+      "source_location": "L1",
+      "id": "src_components_resultpage_js",
+      "community": 2,
+      "norm_label": "resultpage.js"
+    },
+    {
+      "label": "BADGE",
+      "file_type": "code",
+      "source_file": "src/components/ResultPage.js",
+      "source_location": "L7",
+      "id": "components_resultpage_badge",
+      "community": 2,
+      "norm_label": "badge"
+    },
+    {
+      "label": "Code()",
+      "file_type": "code",
+      "source_file": "src/components/ResultPage.js",
+      "source_location": "L13",
+      "id": "components_resultpage_code",
+      "community": 2,
+      "norm_label": "code()"
+    },
+    {
+      "label": "ResultPage()",
+      "file_type": "code",
+      "source_file": "src/components/ResultPage.js",
+      "source_location": "L17",
+      "id": "components_resultpage_resultpage",
+      "community": 2,
+      "norm_label": "resultpage()"
+    },
+    {
+      "label": "useExam.js",
+      "file_type": "code",
+      "source_file": "src/lib/useExam.js",
+      "source_location": "L1",
+      "id": "src_lib_useexam_js",
+      "community": 5,
+      "norm_label": "useexam.js"
+    },
+    {
+      "label": "useExam()",
+      "file_type": "code",
+      "source_file": "src/lib/useExam.js",
+      "source_location": "L6",
+      "id": "lib_useexam_useexam",
+      "community": 5,
+      "norm_label": "useexam()"
+    },
+    {
+      "label": "client.js",
+      "file_type": "code",
+      "source_file": "src/lib/client.js",
+      "source_location": "L1",
+      "id": "src_lib_client_js",
+      "community": 2,
+      "norm_label": "client.js"
+    },
+    {
+      "label": "schemaCache",
+      "file_type": "code",
+      "source_file": "src/lib/client.js",
+      "source_location": "L2",
+      "id": "lib_client_schemacache",
+      "community": 2,
+      "norm_label": "schemacache"
+    },
+    {
+      "label": "fetchSchema()",
+      "file_type": "code",
+      "source_file": "src/lib/client.js",
+      "source_location": "L4",
+      "id": "lib_client_fetchschema",
+      "community": 2,
+      "norm_label": "fetchschema()"
+    },
+    {
+      "label": "runSql()",
+      "file_type": "code",
+      "source_file": "src/lib/client.js",
+      "source_location": "L12",
+      "id": "lib_client_runsql",
+      "community": 2,
+      "norm_label": "runsql()"
+    },
+    {
+      "label": "countStatements()",
+      "file_type": "code",
+      "source_file": "src/lib/client.js",
+      "source_location": "L22",
+      "id": "lib_client_countstatements",
+      "community": 2,
+      "norm_label": "countstatements()"
+    },
+    {
+      "label": "formatCell()",
+      "file_type": "code",
+      "source_file": "src/lib/client.js",
+      "source_location": "L49",
+      "id": "lib_client_formatcell",
+      "community": 2,
+      "norm_label": "formatcell()"
+    },
+    {
+      "label": "formatDuration()",
+      "file_type": "code",
+      "source_file": "src/lib/client.js",
+      "source_location": "L55",
+      "id": "lib_client_formatduration",
+      "community": 2,
+      "norm_label": "formatduration()"
+    },
+    {
+      "label": "rules.js",
+      "file_type": "code",
+      "source_file": "src/lib/rules.js",
+      "source_location": "L1",
+      "id": "src_lib_rules_js",
+      "community": 0,
+      "norm_label": "rules.js"
+    },
+    {
+      "label": "KEYWORDS",
+      "file_type": "code",
+      "source_file": "src/lib/rules.js",
+      "source_location": "L4",
+      "id": "lib_rules_keywords",
+      "community": 0,
+      "norm_label": "keywords"
+    },
+    {
+      "label": "analyze()",
+      "file_type": "code",
+      "source_file": "src/lib/rules.js",
+      "source_location": "L37",
+      "id": "lib_rules_analyze",
+      "community": 0,
+      "norm_label": "analyze()"
+    },
+    {
+      "label": "evaluate()",
+      "file_type": "code",
+      "source_file": "src/lib/rules.js",
+      "source_location": "L100",
+      "id": "lib_rules_evaluate",
+      "community": 0,
+      "norm_label": "evaluate()"
+    },
+    {
+      "label": "labelOf()",
+      "file_type": "code",
+      "source_file": "src/lib/rules.js",
+      "source_location": "L110",
+      "id": "lib_rules_labelof",
+      "community": 0,
+      "norm_label": "labelof()"
+    },
+    {
+      "label": "checkRules()",
+      "file_type": "code",
+      "source_file": "src/lib/rules.js",
+      "source_location": "L116",
+      "id": "lib_rules_checkrules",
+      "community": 0,
+      "norm_label": "checkrules()"
+    },
+    {
+      "label": "grade.js",
+      "file_type": "code",
+      "source_file": "src/lib/grade.js",
+      "source_location": "L1",
+      "id": "src_lib_grade_js",
+      "community": 0,
+      "norm_label": "grade.js"
+    },
+    {
+      "label": "normalizeValue()",
+      "file_type": "code",
+      "source_file": "src/lib/grade.js",
+      "source_location": "L6",
+      "id": "lib_grade_normalizevalue",
+      "community": 0,
+      "norm_label": "normalizevalue()"
+    },
+    {
+      "label": "normalizeRows()",
+      "file_type": "code",
+      "source_file": "src/lib/grade.js",
+      "source_location": "L12",
+      "id": "lib_grade_normalizerows",
+      "community": 0,
+      "norm_label": "normalizerows()"
+    },
+    {
+      "label": "hashRows()",
+      "file_type": "code",
+      "source_file": "src/lib/grade.js",
+      "source_location": "L18",
+      "id": "lib_grade_hashrows",
+      "community": 0,
+      "norm_label": "hashrows()"
+    },
+    {
+      "label": "byId",
+      "file_type": "code",
+      "source_file": "src/lib/grade.js",
+      "source_location": "L22",
+      "id": "lib_grade_byid",
+      "community": 0,
+      "norm_label": "byid"
+    },
+    {
+      "label": "loadExpected()",
+      "file_type": "code",
+      "source_file": "src/lib/grade.js",
+      "source_location": "L25",
+      "id": "lib_grade_loadexpected",
+      "community": 0,
+      "norm_label": "loadexpected()"
+    },
+    {
+      "label": "buildExpected()",
+      "file_type": "code",
+      "source_file": "src/lib/grade.js",
+      "source_location": "L35",
+      "id": "lib_grade_buildexpected",
+      "community": 0,
+      "norm_label": "buildexpected()"
+    },
+    {
+      "label": "ruleReason()",
+      "file_type": "code",
+      "source_file": "src/lib/grade.js",
+      "source_location": "L46",
+      "id": "lib_grade_rulereason",
+      "community": 0,
+      "norm_label": "rulereason()"
+    },
+    {
+      "label": "gradeOne()",
+      "file_type": "code",
+      "source_file": "src/lib/grade.js",
+      "source_location": "L57",
+      "id": "lib_grade_gradeone",
+      "community": 0,
+      "norm_label": "gradeone()"
+    },
+    {
+      "label": "gradeAll()",
+      "file_type": "code",
+      "source_file": "src/lib/grade.js",
+      "source_location": "L96",
+      "id": "lib_grade_gradeall",
+      "community": 0,
+      "norm_label": "gradeall()"
+    },
+    {
+      "label": "storage.js",
+      "file_type": "code",
+      "source_file": "src/lib/storage.js",
+      "source_location": "L1",
+      "id": "src_lib_storage_js",
+      "community": 5,
+      "norm_label": "storage.js"
+    },
+    {
+      "label": "emptyState()",
+      "file_type": "code",
+      "source_file": "src/lib/storage.js",
+      "source_location": "L3",
+      "id": "lib_storage_emptystate",
+      "community": 5,
+      "norm_label": "emptystate()"
+    },
+    {
+      "label": "loadState()",
+      "file_type": "code",
+      "source_file": "src/lib/storage.js",
+      "source_location": "L17",
+      "id": "lib_storage_loadstate",
+      "community": 5,
+      "norm_label": "loadstate()"
+    },
+    {
+      "label": "saveState()",
+      "file_type": "code",
+      "source_file": "src/lib/storage.js",
+      "source_location": "L27",
+      "id": "lib_storage_savestate",
+      "community": 5,
+      "norm_label": "savestate()"
+    },
+    {
+      "label": "clearState()",
+      "file_type": "code",
+      "source_file": "src/lib/storage.js",
+      "source_location": "L36",
+      "id": "lib_storage_clearstate",
+      "community": 5,
+      "norm_label": "clearstate()"
+    },
+    {
+      "label": "probe()",
+      "file_type": "code",
+      "source_file": "src/lib/storage.js",
+      "source_location": "L42",
+      "id": "lib_storage_probe",
+      "community": 5,
+      "norm_label": "probe()"
+    },
+    {
+      "label": "db.js",
+      "file_type": "code",
+      "source_file": "src/lib/engine/db.js",
+      "source_location": "L1",
+      "id": "src_lib_engine_db_js",
+      "community": 16,
+      "norm_label": "db.js"
+    },
+    {
+      "label": "DATASETS",
+      "file_type": "code",
+      "source_file": "src/lib/engine/db.js",
+      "source_location": "L5",
+      "id": "engine_db_datasets",
+      "community": 16,
+      "norm_label": "datasets"
+    },
+    {
+      "label": "register()",
+      "file_type": "code",
+      "source_file": "src/lib/engine/db.js",
+      "source_location": "L9",
+      "id": "engine_db_register",
+      "community": 16,
+      "norm_label": "register()"
+    },
+    {
+      "label": "init()",
+      "file_type": "code",
+      "source_file": "src/lib/engine/db.js",
+      "source_location": "L65",
+      "id": "engine_db_init",
+      "community": 16,
+      "norm_label": "init()"
+    },
+    {
+      "label": "readSchema()",
+      "file_type": "code",
+      "source_file": "src/lib/engine/db.js",
+      "source_location": "L84",
+      "id": "engine_db_readschema",
+      "community": 16,
+      "norm_label": "readschema()"
+    },
+    {
+      "label": "getEngine()",
+      "file_type": "code",
+      "source_file": "src/lib/engine/db.js",
+      "source_location": "L97",
+      "id": "engine_db_getengine",
+      "community": 1,
+      "norm_label": "getengine()"
+    },
+    {
+      "label": "run.js",
+      "file_type": "code",
+      "source_file": "src/lib/engine/run.js",
+      "source_location": "L1",
+      "id": "src_lib_engine_run_js",
+      "community": 1,
+      "norm_label": "run.js"
+    },
+    {
+      "label": "cache",
+      "file_type": "code",
+      "source_file": "src/lib/engine/run.js",
+      "source_location": "L5",
+      "id": "engine_run_cache",
+      "community": 1,
+      "norm_label": "cache"
+    },
+    {
+      "label": "mapSqliteError()",
+      "file_type": "code",
+      "source_file": "src/lib/engine/run.js",
+      "source_location": "L7",
+      "id": "engine_run_mapsqliteerror",
+      "community": 1,
+      "norm_label": "mapsqliteerror()"
+    },
+    {
+      "label": "checkColumns()",
+      "file_type": "code",
+      "source_file": "src/lib/engine/run.js",
+      "source_location": "L27",
+      "id": "engine_run_checkcolumns",
+      "community": 1,
+      "norm_label": "checkcolumns()"
+    },
+    {
+      "label": "decimalScales()",
+      "file_type": "code",
+      "source_file": "src/lib/engine/run.js",
+      "source_location": "L73",
+      "id": "engine_run_decimalscales",
+      "community": 1,
+      "norm_label": "decimalscales()"
+    },
+    {
+      "label": "displayNames()",
+      "file_type": "code",
+      "source_file": "src/lib/engine/run.js",
+      "source_location": "L91",
+      "id": "engine_run_displaynames",
+      "community": 1,
+      "norm_label": "displaynames()"
+    },
+    {
+      "label": "runQuery()",
+      "file_type": "code",
+      "source_file": "src/lib/engine/run.js",
+      "source_location": "L107",
+      "id": "engine_run_runquery",
+      "community": 1,
+      "norm_label": "runquery()"
+    },
+    {
+      "label": "getSchema()",
+      "file_type": "code",
+      "source_file": "src/lib/engine/run.js",
+      "source_location": "L153",
+      "id": "engine_run_getschema",
+      "community": 1,
+      "norm_label": "getschema()"
+    },
+    {
+      "label": "parse.js",
+      "file_type": "code",
+      "source_file": "src/lib/engine/parse.js",
+      "source_location": "L1",
+      "id": "src_lib_engine_parse_js",
+      "community": 1,
+      "norm_label": "parse.js"
+    },
+    {
+      "label": "parser",
+      "file_type": "code",
+      "source_file": "src/lib/engine/parse.js",
+      "source_location": "L4",
+      "id": "engine_parse_parser",
+      "community": 1,
+      "norm_label": "parser"
+    },
+    {
+      "label": "OPT",
+      "file_type": "code",
+      "source_file": "src/lib/engine/parse.js",
+      "source_location": "L5",
+      "id": "engine_parse_opt",
+      "community": 1,
+      "norm_label": "opt"
+    },
+    {
+      "label": "MysqlError",
+      "file_type": "code",
+      "source_file": "src/lib/engine/parse.js",
+      "source_location": "L7",
+      "id": "engine_parse_mysqlerror",
+      "community": 1,
+      "norm_label": "mysqlerror"
+    },
+    {
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "src/lib/engine/parse.js",
+      "source_location": "L8",
+      "id": "engine_parse_mysqlerror_constructor",
+      "community": 1,
+      "norm_label": ".constructor()"
+    },
+    {
+      "label": ".full()",
+      "file_type": "code",
+      "source_file": "src/lib/engine/parse.js",
+      "source_location": "L14",
+      "id": "engine_parse_mysqlerror_full",
+      "community": 1,
+      "norm_label": ".full()"
+    },
+    {
+      "label": "astCache",
+      "file_type": "code",
+      "source_file": "src/lib/engine/parse.js",
+      "source_location": "L19",
+      "id": "engine_parse_astcache",
+      "community": 1,
+      "norm_label": "astcache"
+    },
+    {
+      "label": "parseSelect()",
+      "file_type": "code",
+      "source_file": "src/lib/engine/parse.js",
+      "source_location": "L22",
+      "id": "engine_parse_parseselect",
+      "community": 1,
+      "norm_label": "parseselect()"
+    },
+    {
+      "label": "walk()",
+      "file_type": "code",
+      "source_file": "src/lib/engine/parse.js",
+      "source_location": "L72",
+      "id": "engine_parse_walk",
+      "community": 1,
+      "norm_label": "walk()"
+    },
+    {
+      "label": "containsMysql8Only()",
+      "file_type": "code",
+      "source_file": "src/lib/engine/parse.js",
+      "source_location": "L87",
+      "id": "engine_parse_containsmysql8only",
+      "community": 1,
+      "norm_label": "containsmysql8only()"
+    },
+    {
+      "label": "resolveNatural()",
+      "file_type": "code",
+      "source_file": "src/lib/engine/parse.js",
+      "source_location": "L101",
+      "id": "engine_parse_resolvenatural",
+      "community": 1,
+      "norm_label": "resolvenatural()"
+    },
+    {
+      "label": "anyAll()",
+      "file_type": "code",
+      "source_file": "src/lib/engine/parse.js",
+      "source_location": "L119",
+      "id": "engine_parse_anyall",
+      "community": 1,
+      "norm_label": "anyall()"
+    },
+    {
+      "label": "toSqlite()",
+      "file_type": "code",
+      "source_file": "src/lib/engine/parse.js",
+      "source_location": "L143",
+      "id": "engine_parse_tosqlite",
+      "community": 1,
+      "norm_label": "tosqlite()"
+    },
+    {
+      "label": "tableNames()",
+      "file_type": "code",
+      "source_file": "src/lib/engine/parse.js",
+      "source_location": "L175",
+      "id": "engine_parse_tablenames",
+      "community": 1,
+      "norm_label": "tablenames()"
+    },
+    {
+      "label": "meta.js",
+      "file_type": "code",
+      "source_file": "src/lib/engine/meta.js",
+      "source_location": "L1",
+      "id": "src_lib_engine_meta_js",
+      "community": 1,
+      "norm_label": "meta.js"
+    },
+    {
+      "label": "runMeta()",
+      "file_type": "code",
+      "source_file": "src/lib/engine/meta.js",
+      "source_location": "L4",
+      "id": "engine_meta_runmeta",
+      "community": 1,
+      "norm_label": "runmeta()"
+    },
+    {
+      "label": "questions.js",
+      "file_type": "code",
+      "source_file": "src/data/questions.js",
+      "source_location": "L1",
+      "id": "src_data_questions_js",
+      "community": 0,
+      "norm_label": "questions.js"
+    },
+    {
+      "label": "questions",
+      "file_type": "code",
+      "source_file": "src/data/questions.js",
+      "source_location": "L7",
+      "id": "data_questions_questions",
+      "community": 0,
+      "norm_label": "questions"
+    },
+    {
+      "label": "publicQuestion()",
+      "file_type": "code",
+      "source_file": "src/data/questions.js",
+      "source_location": "L902",
+      "id": "data_questions_publicquestion",
+      "community": 0,
+      "norm_label": "publicquestion()"
+    },
+    {
+      "label": "topics.js",
+      "file_type": "code",
+      "source_file": "src/data/topics.js",
+      "source_location": "L1",
+      "id": "src_data_topics_js",
+      "community": 0,
+      "norm_label": "topics.js"
+    },
+    {
+      "label": "TOPICS",
+      "file_type": "code",
+      "source_file": "src/data/topics.js",
+      "source_location": "L2",
+      "id": "data_topics_topics",
+      "community": 0,
+      "norm_label": "topics"
+    },
+    {
+      "label": "DATASET_LABELS",
+      "file_type": "code",
+      "source_file": "src/data/topics.js",
+      "source_location": "L10",
+      "id": "data_topics_dataset_labels",
+      "community": 0,
+      "norm_label": "dataset_labels"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "id": "readme_md",
+      "community": 9,
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "Getting Started",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L3",
+      "id": "database_mock_quiz_readme_getting_started",
+      "community": 9,
+      "norm_label": "getting started"
+    },
+    {
+      "label": "code:bash (npm run dev)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L7",
+      "id": "database_mock_quiz_readme_codeblock_1",
+      "community": 9,
+      "norm_label": "code:bash (npm run dev)"
+    },
+    {
+      "label": "Learn More",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L23",
+      "id": "database_mock_quiz_readme_learn_more",
+      "community": 9,
+      "norm_label": "learn more"
+    },
+    {
+      "label": "Deploy on Vercel",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L32",
+      "id": "database_mock_quiz_readme_deploy_on_vercel",
+      "community": 9,
+      "norm_label": "deploy on vercel"
+    },
+    {
+      "label": "AGENTS.md",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L1",
+      "id": "agents_md",
+      "community": 13,
+      "norm_label": "agents.md"
+    },
+    {
+      "label": "This is NOT the Next.js you know",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L3",
+      "id": "database_mock_quiz_agents_this_is_not_the_next_js_you_know",
+      "community": 13,
+      "norm_label": "this is not the next.js you know"
+    },
+    {
+      "label": "SQL Mock Exam \u2014 Specification.md",
+      "file_type": "document",
+      "source_file": "SQL Mock Exam \u2014 Specification.md",
+      "source_location": "L1",
+      "id": "sql_mock_exam_specification_md",
+      "community": 4,
+      "norm_label": "sql mock exam \u2014 specification.md"
+    },
+    {
+      "label": "SQL Mock Exam \u2014 Specification",
+      "file_type": "document",
+      "source_file": "SQL Mock Exam \u2014 Specification.md",
+      "source_location": "L1",
+      "id": "database_mock_quiz_sql_mock_exam_specification_sql_mock_exam_specification",
+      "community": 4,
+      "norm_label": "sql mock exam \u2014 specification"
+    },
+    {
+      "label": "\u0e20\u0e32\u0e1e\u0e23\u0e27\u0e21\u0e41\u0e25\u0e30\u0e40\u0e1b\u0e49\u0e32\u0e2b\u0e21\u0e32\u0e22",
+      "file_type": "document",
+      "source_file": "SQL Mock Exam \u2014 Specification.md",
+      "source_location": "L5",
+      "id": "database_mock_quiz_sql_mock_exam_specification_\u0e20\u0e32\u0e1e\u0e23\u0e27\u0e21\u0e41\u0e25\u0e30\u0e40\u0e1b_\u0e32\u0e2b\u0e21\u0e32\u0e22",
+      "community": 4,
+      "norm_label": "\u0e20\u0e32\u0e1e\u0e23\u0e27\u0e21\u0e41\u0e25\u0e30\u0e40\u0e1b\u0e32\u0e2b\u0e21\u0e32\u0e22"
+    },
+    {
+      "label": "\u0e1c\u0e39\u0e49\u0e43\u0e0a\u0e49\u0e41\u0e25\u0e30 user flow",
+      "file_type": "document",
+      "source_file": "SQL Mock Exam \u2014 Specification.md",
+      "source_location": "L19",
+      "id": "database_mock_quiz_sql_mock_exam_specification_\u0e1c_\u0e43\u0e0a_\u0e41\u0e25\u0e30_user_flow",
+      "community": 4,
+      "norm_label": "\u0e1c\u0e43\u0e0a\u0e41\u0e25\u0e30 user flow"
+    },
+    {
+      "label": "Functional requirements",
+      "file_type": "document",
+      "source_file": "SQL Mock Exam \u2014 Specification.md",
+      "source_location": "L27",
+      "id": "database_mock_quiz_sql_mock_exam_specification_functional_requirements",
+      "community": 4,
+      "norm_label": "functional requirements"
+    },
+    {
+      "label": "\u0e2b\u0e19\u0e49\u0e32\u0e08\u0e2d",
+      "file_type": "document",
+      "source_file": "SQL Mock Exam \u2014 Specification.md",
+      "source_location": "L50",
+      "id": "database_mock_quiz_sql_mock_exam_specification_\u0e2b\u0e19_\u0e32\u0e08\u0e2d",
+      "community": 4,
+      "norm_label": "\u0e2b\u0e19\u0e32\u0e08\u0e2d"
+    },
+    {
+      "label": "\u0e10\u0e32\u0e19\u0e02\u0e49\u0e2d\u0e21\u0e39\u0e25\u0e15\u0e31\u0e27\u0e2d\u0e22\u0e48\u0e32\u0e07\u0e41\u0e25\u0e30\u0e04\u0e25\u0e31\u0e07\u0e02\u0e49\u0e2d\u0e2a\u0e2d\u0e1a",
+      "file_type": "document",
+      "source_file": "SQL Mock Exam \u2014 Specification.md",
+      "source_location": "L77",
+      "id": "database_mock_quiz_sql_mock_exam_specification_\u0e10\u0e32\u0e19\u0e02_\u0e2d\u0e21_\u0e25\u0e15_\u0e27\u0e2d\u0e22_\u0e32\u0e07\u0e41\u0e25\u0e30\u0e04\u0e25_\u0e07\u0e02_\u0e2d\u0e2a\u0e2d\u0e1a",
+      "community": 4,
+      "norm_label": "\u0e10\u0e32\u0e19\u0e02\u0e2d\u0e21\u0e25\u0e15\u0e31\u0e27\u0e2d\u0e22\u0e32\u0e07\u0e41\u0e25\u0e30\u0e04\u0e25\u0e31\u0e07\u0e02\u0e2d\u0e2a\u0e2d\u0e1a"
+    },
+    {
+      "label": "code:javascript ({)",
+      "file_type": "document",
+      "source_file": "SQL Mock Exam \u2014 Specification.md",
+      "source_location": "L112",
+      "id": "database_mock_quiz_sql_mock_exam_specification_codeblock_1",
+      "community": 4,
+      "norm_label": "code:javascript ({)"
+    },
+    {
+      "label": "\u0e01\u0e32\u0e23\u0e15\u0e23\u0e27\u0e08\u0e04\u0e33\u0e15\u0e2d\u0e1a\u0e41\u0e25\u0e30\u0e04\u0e34\u0e14\u0e04\u0e30\u0e41\u0e19\u0e19",
+      "file_type": "document",
+      "source_file": "SQL Mock Exam \u2014 Specification.md",
+      "source_location": "L126",
+      "id": "database_mock_quiz_sql_mock_exam_specification_\u0e01\u0e32\u0e23\u0e15\u0e23\u0e27\u0e08\u0e04_\u0e32\u0e15\u0e2d\u0e1a\u0e41\u0e25\u0e30\u0e04_\u0e14\u0e04\u0e30\u0e41\u0e19\u0e19",
+      "community": 4,
+      "norm_label": "\u0e01\u0e32\u0e23\u0e15\u0e23\u0e27\u0e08\u0e04\u0e4d\u0e32\u0e15\u0e2d\u0e1a\u0e41\u0e25\u0e30\u0e04\u0e34\u0e14\u0e04\u0e30\u0e41\u0e19\u0e19"
+    },
+    {
+      "label": "\u0e40\u0e07\u0e37\u0e48\u0e2d\u0e19\u0e44\u0e02\u0e02\u0e2d\u0e07\u0e42\u0e08\u0e17\u0e22\u0e4c",
+      "file_type": "document",
+      "source_file": "SQL Mock Exam \u2014 Specification.md",
+      "source_location": "L149",
+      "id": "database_mock_quiz_sql_mock_exam_specification_\u0e40\u0e07_\u0e2d\u0e19\u0e44\u0e02\u0e02\u0e2d\u0e07\u0e42\u0e08\u0e17\u0e22",
+      "community": 4,
+      "norm_label": "\u0e40\u0e07\u0e37\u0e2d\u0e19\u0e44\u0e02\u0e02\u0e2d\u0e07\u0e42\u0e08\u0e17\u0e22\u0e4c"
+    },
+    {
+      "label": "code:javascript ({)",
+      "file_type": "document",
+      "source_file": "SQL Mock Exam \u2014 Specification.md",
+      "source_location": "L167",
+      "id": "database_mock_quiz_sql_mock_exam_specification_codeblock_2",
+      "community": 4,
+      "norm_label": "code:javascript ({)"
+    },
+    {
+      "label": "\u0e04\u0e27\u0e32\u0e21\u0e40\u0e23\u0e47\u0e27\u0e02\u0e2d\u0e07 grader",
+      "file_type": "document",
+      "source_file": "SQL Mock Exam \u2014 Specification.md",
+      "source_location": "L179",
+      "id": "database_mock_quiz_sql_mock_exam_specification_\u0e04\u0e27\u0e32\u0e21\u0e40\u0e23_\u0e27\u0e02\u0e2d\u0e07_grader",
+      "community": 4,
+      "norm_label": "\u0e04\u0e27\u0e32\u0e21\u0e40\u0e23\u0e47\u0e27\u0e02\u0e2d\u0e07 grader"
+    },
+    {
+      "label": "\u0e2a\u0e16\u0e32\u0e19\u0e30\u0e04\u0e33\u0e15\u0e2d\u0e1a\u0e41\u0e25\u0e30\u0e01\u0e32\u0e23\u0e1a\u0e31\u0e19\u0e17\u0e36\u0e01\u0e02\u0e49\u0e2d\u0e21\u0e39\u0e25",
+      "file_type": "document",
+      "source_file": "SQL Mock Exam \u2014 Specification.md",
+      "source_location": "L197",
+      "id": "database_mock_quiz_sql_mock_exam_specification_\u0e2a\u0e16\u0e32\u0e19\u0e30\u0e04_\u0e32\u0e15\u0e2d\u0e1a\u0e41\u0e25\u0e30\u0e01\u0e32\u0e23\u0e1a_\u0e19\u0e17_\u0e01\u0e02_\u0e2d\u0e21_\u0e25",
+      "community": 4,
+      "norm_label": "\u0e2a\u0e16\u0e32\u0e19\u0e30\u0e04\u0e4d\u0e32\u0e15\u0e2d\u0e1a\u0e41\u0e25\u0e30\u0e01\u0e32\u0e23\u0e1a\u0e31\u0e19\u0e17\u0e36\u0e01\u0e02\u0e2d\u0e21\u0e25"
+    },
+    {
+      "label": "\u0e40\u0e17\u0e04\u0e42\u0e19\u0e42\u0e25\u0e22\u0e35\u0e41\u0e25\u0e30\u0e02\u0e49\u0e2d\u0e01\u0e33\u0e2b\u0e19\u0e14\u0e2d\u0e37\u0e48\u0e19",
+      "file_type": "document",
+      "source_file": "SQL Mock Exam \u2014 Specification.md",
+      "source_location": "L217",
+      "id": "database_mock_quiz_sql_mock_exam_specification_\u0e40\u0e17\u0e04\u0e42\u0e19\u0e42\u0e25\u0e22_\u0e41\u0e25\u0e30\u0e02_\u0e2d\u0e01_\u0e32\u0e2b\u0e19\u0e14\u0e2d_\u0e19",
+      "community": 4,
+      "norm_label": "\u0e40\u0e17\u0e04\u0e42\u0e19\u0e42\u0e25\u0e22\u0e35\u0e41\u0e25\u0e30\u0e02\u0e2d\u0e01\u0e4d\u0e32\u0e2b\u0e19\u0e14\u0e2d\u0e37\u0e19"
+    },
+    {
+      "label": "Monaco Editor",
+      "file_type": "document",
+      "source_file": "SQL Mock Exam \u2014 Specification.md",
+      "source_location": "L240",
+      "id": "database_mock_quiz_sql_mock_exam_specification_monaco_editor",
+      "community": 4,
+      "norm_label": "monaco editor"
+    },
+    {
+      "label": "\u0e01\u0e32\u0e23\u0e08\u0e33\u0e25\u0e2d\u0e07 MySQL 5.7",
+      "file_type": "document",
+      "source_file": "SQL Mock Exam \u2014 Specification.md",
+      "source_location": "L252",
+      "id": "database_mock_quiz_sql_mock_exam_specification_\u0e01\u0e32\u0e23\u0e08_\u0e32\u0e25\u0e2d\u0e07_mysql_5_7",
+      "community": 4,
+      "norm_label": "\u0e01\u0e32\u0e23\u0e08\u0e4d\u0e32\u0e25\u0e2d\u0e07 mysql 5.7"
+    },
+    {
+      "label": "\u0e01\u0e32\u0e23\u0e15\u0e31\u0e14\u0e2a\u0e34\u0e19\u0e43\u0e08",
+      "file_type": "document",
+      "source_file": "SQL Mock Exam \u2014 Specification.md",
+      "source_location": "L281",
+      "id": "database_mock_quiz_sql_mock_exam_specification_\u0e01\u0e32\u0e23\u0e15_\u0e14\u0e2a_\u0e19\u0e43\u0e08",
+      "community": 4,
+      "norm_label": "\u0e01\u0e32\u0e23\u0e15\u0e31\u0e14\u0e2a\u0e34\u0e19\u0e43\u0e08"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "jsconfig.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "jsconfig_json",
+      "target": "database_mock_quiz_jsconfig_compileroptions"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "jsconfig.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "database_mock_quiz_jsconfig_compileroptions",
+      "target": "database_mock_quiz_jsconfig_compileroptions_paths"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "jsconfig.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "database_mock_quiz_jsconfig_compileroptions_paths",
+      "target": "database_mock_quiz_jsconfig_paths"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "vercel.json",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "vercel_json",
+      "target": "database_mock_quiz_vercel_regions"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "next.config.mjs",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "next_config_mjs",
+      "target": "database_mock_quiz_next_config_nextconfig"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "package_json",
+      "target": "database_mock_quiz_package_dependencies"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L23",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "package_json",
+      "target": "database_mock_quiz_package_devdependencies"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L28",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "package_json",
+      "target": "database_mock_quiz_package_ignorescripts"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "package_json",
+      "target": "database_mock_quiz_package_name"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L27",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "package_json",
+      "target": "database_mock_quiz_package_packagemanager"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "package_json",
+      "target": "database_mock_quiz_package_private"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "package_json",
+      "target": "database_mock_quiz_package_scripts"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L32",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "package_json",
+      "target": "database_mock_quiz_package_trusteddependencies"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "package_json",
+      "target": "database_mock_quiz_package_type"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "package_json",
+      "target": "database_mock_quiz_package_version"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "database_mock_quiz_package_scripts",
+      "target": "database_mock_quiz_package_scripts_build"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "database_mock_quiz_package_scripts",
+      "target": "database_mock_quiz_package_scripts_check"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "database_mock_quiz_package_scripts",
+      "target": "database_mock_quiz_package_scripts_dev"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "database_mock_quiz_package_scripts",
+      "target": "database_mock_quiz_package_scripts_prebuild"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "database_mock_quiz_package_scripts",
+      "target": "database_mock_quiz_package_scripts_predev"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "database_mock_quiz_package_scripts",
+      "target": "database_mock_quiz_package_scripts_start"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "database_mock_quiz_package_dependencies",
+      "target": "database_mock_quiz_package_dependencies_monaco_editor"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "database_mock_quiz_package_dependencies",
+      "target": "database_mock_quiz_package_dependencies_monaco_editor_react"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "database_mock_quiz_package_dependencies",
+      "target": "database_mock_quiz_package_dependencies_next"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L18",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "database_mock_quiz_package_dependencies",
+      "target": "database_mock_quiz_package_dependencies_node_sql_parser"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L19",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "database_mock_quiz_package_dependencies",
+      "target": "database_mock_quiz_package_dependencies_react"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "database_mock_quiz_package_dependencies",
+      "target": "database_mock_quiz_package_dependencies_react_dom"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L21",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "database_mock_quiz_package_dependencies",
+      "target": "database_mock_quiz_package_dependencies_sql_js"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L25",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "database_mock_quiz_package_devdependencies",
+      "target": "database_mock_quiz_package_devdependencies_tailwindcss"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L24",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "database_mock_quiz_package_devdependencies",
+      "target": "database_mock_quiz_package_devdependencies_tailwindcss_turbopack"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/check.mjs",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_check_mjs",
+      "target": "data_questions_questions"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/check.mjs",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_check_mjs",
+      "target": "engine_run_runquery"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/check.mjs",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_check_mjs",
+      "target": "lib_grade_buildexpected"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/check.mjs",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_check_mjs",
+      "target": "lib_grade_gradeone"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/check.mjs",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_check_mjs",
+      "target": "lib_grade_normalizerows"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/check.mjs",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_check_mjs",
+      "target": "lib_rules_checkrules"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/check.mjs",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_check_mjs",
+      "target": "scripts_check_expected"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/check.mjs",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_check_mjs",
+      "target": "scripts_check_ids"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/check.mjs",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_check_mjs",
+      "target": "scripts_check_problems"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/check.mjs",
+      "source_location": "L27",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_check_mjs",
+      "target": "scripts_check_r"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/check.mjs",
+      "source_location": "L23",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_check_mjs",
+      "target": "scripts_check_rows"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/check.mjs",
+      "source_location": "L45",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_check_mjs",
+      "target": "scripts_check_t0"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/check.mjs",
+      "source_location": "L42",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_check_mjs",
+      "target": "scripts_check_times"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/check.mjs",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_check_mjs",
+      "target": "src_data_questions_js"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/check.mjs",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_check_mjs",
+      "target": "src_lib_engine_run_js"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/check.mjs",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_check_mjs",
+      "target": "src_lib_grade_js"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/check.mjs",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_check_mjs",
+      "target": "src_lib_rules_js"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/layout.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_layout_js",
+      "target": "app_layout_geistmono"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/layout.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_layout_js",
+      "target": "app_layout_geistsans"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/layout.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_layout_js",
+      "target": "app_layout_metadata"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/layout.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_layout_js",
+      "target": "app_layout_notothai"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/layout.js",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_layout_js",
+      "target": "app_layout_rootlayout"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/layout.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_layout_js",
+      "target": "app_layout_viewport"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/page.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_page_js",
+      "target": "app_page_home"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/api/submit/route.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_api_submit_route_js",
+      "target": "submit_route_post"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/app/api/submit/route.js",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "submit_route_post",
+      "target": "lib_grade_gradeall"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/api/schema/route.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_api_schema_route_js",
+      "target": "schema_route_get"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/app/api/schema/route.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "schema_route_get",
+      "target": "engine_run_getschema"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/api/exam/route.js",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_api_exam_route_js",
+      "target": "exam_route_get"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/api/exam/route.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_api_exam_route_js",
+      "target": "exam_route_shuffle"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/api/exam/route.js",
+      "source_location": "L26",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "exam_route_get",
+      "target": "exam_route_shuffle"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/api/run/route.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_api_run_route_js",
+      "target": "run_route_post"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/app/api/run/route.js",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "run_route_post",
+      "target": "engine_meta_runmeta"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/app/api/run/route.js",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "run_route_post",
+      "target": "engine_run_runquery"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ExamView.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_examview_js",
+      "target": "src_components_tablepanel_js"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/TablePanel.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_tablepanel_js",
+      "target": "components_tablepanel_tablepanel"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/App.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_app_js",
+      "target": "src_components_examview_js"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ExamView.js",
+      "source_location": "L25",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_examview_js",
+      "target": "components_examview_examview"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ExamView.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_examview_js",
+      "target": "components_examview_sqleditor"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ExamView.js",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_examview_js",
+      "target": "components_examview_usenow"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ExamView.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_examview_js",
+      "target": "components_questionnav_questionstatus"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ExamView.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_examview_js",
+      "target": "src_components_confirmdialog_js"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ExamView.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_examview_js",
+      "target": "src_components_questionnav_js"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ExamView.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_examview_js",
+      "target": "src_components_resulttable_js"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ExamView.js",
+      "source_location": "L31",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_examview_examview",
+      "target": "components_examview_usenow"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ExamView.js",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "components_examview_examview",
+      "target": "components_questionnav_questionstatus"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/components/ExamView.js",
+      "source_location": "L109",
+      "weight": 1.0,
+      "source": "components_examview_examview",
+      "target": "lib_client_formatduration"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/App.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_app_js",
+      "target": "src_components_topicpicker_js"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/TopicPicker.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_topicpicker_js",
+      "target": "components_topicpicker_counts"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/TopicPicker.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_topicpicker_js",
+      "target": "components_topicpicker_topicpicker"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ResultPage.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_resultpage_js",
+      "target": "src_components_resulttable_js"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ResultTable.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_resulttable_js",
+      "target": "components_resulttable_resulttable"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ResultTable.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_resulttable_js",
+      "target": "components_resulttable_sizes"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/SqlEditor.js",
+      "source_location": "L51",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_sqleditor_js",
+      "target": "components_sqleditor_definethemes"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/SqlEditor.js",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_sqleditor_js",
+      "target": "components_sqleditor_keywords"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/SqlEditor.js",
+      "source_location": "L26",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_sqleditor_js",
+      "target": "components_sqleditor_registercompletion"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/SqlEditor.js",
+      "source_location": "L23",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_sqleditor_js",
+      "target": "components_sqleditor_schemaref"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/SqlEditor.js",
+      "source_location": "L69",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_sqleditor_js",
+      "target": "components_sqleditor_sqleditor"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ConfirmDialog.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_confirmdialog_js",
+      "target": "components_confirmdialog_confirmdialog"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/App.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_app_js",
+      "target": "components_app_app"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/App.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_app_js",
+      "target": "src_components_resultpage_js"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/components/App.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "components_app_app",
+      "target": "lib_useexam_useexam"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/QuestionNav.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_questionnav_js",
+      "target": "components_questionnav_glyph"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/QuestionNav.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_questionnav_js",
+      "target": "components_questionnav_questionnav"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/QuestionNav.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_questionnav_js",
+      "target": "components_questionnav_questionstatus"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/QuestionNav.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_questionnav_js",
+      "target": "components_questionnav_status_label"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ResultPage.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_resultpage_js",
+      "target": "components_resultpage_badge"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ResultPage.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_resultpage_js",
+      "target": "components_resultpage_code"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ResultPage.js",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_resultpage_js",
+      "target": "components_resultpage_resultpage"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/components/ResultPage.js",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "components_resultpage_resultpage",
+      "target": "lib_client_formatduration"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/useExam.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_useexam_js",
+      "target": "lib_storage_clearstate"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/useExam.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_useexam_js",
+      "target": "lib_storage_emptystate"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/useExam.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_useexam_js",
+      "target": "lib_storage_loadstate"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/useExam.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_useexam_js",
+      "target": "lib_storage_savestate"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/useExam.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_useexam_js",
+      "target": "lib_useexam_useexam"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/useExam.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_useexam_js",
+      "target": "src_lib_storage_js"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/client.js",
+      "source_location": "L22",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_client_js",
+      "target": "lib_client_countstatements"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/client.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_client_js",
+      "target": "lib_client_fetchschema"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/client.js",
+      "source_location": "L49",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_client_js",
+      "target": "lib_client_formatcell"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/client.js",
+      "source_location": "L55",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_client_js",
+      "target": "lib_client_formatduration"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/client.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_client_js",
+      "target": "lib_client_runsql"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/client.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_client_js",
+      "target": "lib_client_schemacache"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/grade.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_grade_js",
+      "target": "src_lib_rules_js"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/rules.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_rules_js",
+      "target": "engine_parse_parseselect"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/rules.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_rules_js",
+      "target": "engine_parse_walk"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/rules.js",
+      "source_location": "L25",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_rules_js",
+      "target": "lib_rules_analyze"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/rules.js",
+      "source_location": "L99",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_rules_js",
+      "target": "lib_rules_checkrules"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/rules.js",
+      "source_location": "L83",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_rules_js",
+      "target": "lib_rules_evaluate"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/rules.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_rules_js",
+      "target": "lib_rules_keywords"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/rules.js",
+      "source_location": "L93",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_rules_js",
+      "target": "lib_rules_labelof"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/rules.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_rules_js",
+      "target": "src_lib_engine_parse_js"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/rules.js",
+      "source_location": "L51",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_rules_analyze",
+      "target": "engine_parse_walk"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/rules.js",
+      "source_location": "L104",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_rules_checkrules",
+      "target": "lib_rules_analyze"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/rules.js",
+      "source_location": "L108",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_rules_checkrules",
+      "target": "lib_rules_evaluate"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/grade.js",
+      "source_location": "L51",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_grade_rulereason",
+      "target": "lib_rules_labelof"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/grade.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_grade_js",
+      "target": "lib_rules_labelof"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/lib/grade.js",
+      "source_location": "L65",
+      "weight": 1.0,
+      "source": "lib_grade_gradeone",
+      "target": "lib_rules_checkrules"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/lib/rules.js",
+      "source_location": "L104",
+      "weight": 1.0,
+      "source": "lib_rules_checkrules",
+      "target": "engine_parse_parseselect"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/grade.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_grade_js",
+      "target": "lib_rules_checkrules"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/grade.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_grade_js",
+      "target": "data_questions_questions"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/grade.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_grade_js",
+      "target": "engine_run_runquery"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/grade.js",
+      "source_location": "L35",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_grade_js",
+      "target": "lib_grade_buildexpected"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/grade.js",
+      "source_location": "L22",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_grade_js",
+      "target": "lib_grade_byid"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/grade.js",
+      "source_location": "L94",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_grade_js",
+      "target": "lib_grade_gradeall"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/grade.js",
+      "source_location": "L57",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_grade_js",
+      "target": "lib_grade_gradeone"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/grade.js",
+      "source_location": "L18",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_grade_js",
+      "target": "lib_grade_hashrows"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/grade.js",
+      "source_location": "L25",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_grade_js",
+      "target": "lib_grade_loadexpected"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/grade.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_grade_js",
+      "target": "lib_grade_normalizerows"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/grade.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_grade_js",
+      "target": "lib_grade_normalizevalue"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/grade.js",
+      "source_location": "L46",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_grade_js",
+      "target": "lib_grade_rulereason"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/grade.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_grade_js",
+      "target": "src_data_questions_js"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/grade.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_grade_js",
+      "target": "src_lib_engine_run_js"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/grade.js",
+      "source_location": "L42",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_grade_buildexpected",
+      "target": "lib_grade_normalizerows"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/grade.js",
+      "source_location": "L79",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_grade_gradeone",
+      "target": "lib_grade_normalizerows"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/grade.js",
+      "source_location": "L42",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_grade_buildexpected",
+      "target": "lib_grade_hashrows"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/grade.js",
+      "source_location": "L79",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_grade_gradeone",
+      "target": "lib_grade_hashrows"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/grade.js",
+      "source_location": "L95",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_grade_gradeall",
+      "target": "lib_grade_loadexpected"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/lib/grade.js",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "lib_grade_buildexpected",
+      "target": "engine_run_runquery"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/grade.js",
+      "source_location": "L88",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_grade_gradeone",
+      "target": "lib_grade_rulereason"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/grade.js",
+      "source_location": "L100",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_grade_gradeall",
+      "target": "lib_grade_gradeone"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/lib/grade.js",
+      "source_location": "L68",
+      "weight": 1.0,
+      "source": "lib_grade_gradeone",
+      "target": "engine_run_runquery"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/storage.js",
+      "source_location": "L36",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_storage_js",
+      "target": "lib_storage_clearstate"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/storage.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_storage_js",
+      "target": "lib_storage_emptystate"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/storage.js",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_storage_js",
+      "target": "lib_storage_loadstate"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/storage.js",
+      "source_location": "L42",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_storage_js",
+      "target": "lib_storage_probe"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/storage.js",
+      "source_location": "L27",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_storage_js",
+      "target": "lib_storage_savestate"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/storage.js",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_storage_loadstate",
+      "target": "lib_storage_emptystate"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/storage.js",
+      "source_location": "L23",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_storage_loadstate",
+      "target": "lib_storage_probe"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/engine/db.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_engine_db_js",
+      "target": "engine_db_datasets"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/engine/db.js",
+      "source_location": "L97",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_engine_db_js",
+      "target": "engine_db_getengine"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/engine/db.js",
+      "source_location": "L65",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_engine_db_js",
+      "target": "engine_db_init"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/engine/db.js",
+      "source_location": "L84",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_engine_db_js",
+      "target": "engine_db_readschema"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/engine/db.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_engine_db_js",
+      "target": "engine_db_register"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/engine/run.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_engine_run_js",
+      "target": "src_lib_engine_db_js"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/engine/db.js",
+      "source_location": "L77",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "engine_db_init",
+      "target": "engine_db_register"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/engine/db.js",
+      "source_location": "L98",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "engine_db_getengine",
+      "target": "engine_db_init"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/engine/db.js",
+      "source_location": "L79",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "engine_db_init",
+      "target": "engine_db_readschema"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/lib/engine/run.js",
+      "source_location": "L154",
+      "weight": 1.0,
+      "source": "engine_run_getschema",
+      "target": "engine_db_getengine"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/lib/engine/run.js",
+      "source_location": "L108",
+      "weight": 1.0,
+      "source": "engine_run_runquery",
+      "target": "engine_db_getengine"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/engine/run.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_engine_run_js",
+      "target": "engine_db_getengine"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/engine/meta.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_engine_meta_js",
+      "target": "src_lib_engine_run_js"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/engine/run.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_engine_run_js",
+      "target": "engine_parse_mysqlerror"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/engine/run.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_engine_run_js",
+      "target": "engine_parse_opt"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/engine/run.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_engine_run_js",
+      "target": "engine_parse_parser"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/engine/run.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_engine_run_js",
+      "target": "engine_parse_parseselect"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/engine/run.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_engine_run_js",
+      "target": "engine_parse_tosqlite"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/engine/run.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_engine_run_js",
+      "target": "engine_parse_walk"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/engine/run.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_engine_run_js",
+      "target": "engine_run_cache"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/engine/run.js",
+      "source_location": "L27",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_engine_run_js",
+      "target": "engine_run_checkcolumns"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/engine/run.js",
+      "source_location": "L73",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_engine_run_js",
+      "target": "engine_run_decimalscales"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/engine/run.js",
+      "source_location": "L91",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_engine_run_js",
+      "target": "engine_run_displaynames"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/engine/run.js",
+      "source_location": "L153",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_engine_run_js",
+      "target": "engine_run_getschema"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/engine/run.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_engine_run_js",
+      "target": "engine_run_mapsqliteerror"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/engine/run.js",
+      "source_location": "L107",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_engine_run_js",
+      "target": "engine_run_runquery"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/engine/run.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_engine_run_js",
+      "target": "src_lib_engine_parse_js"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/engine/run.js",
+      "source_location": "L142",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "engine_run_runquery",
+      "target": "engine_run_mapsqliteerror"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/engine/run.js",
+      "source_location": "L34",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "engine_run_checkcolumns",
+      "target": "engine_parse_walk"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/engine/run.js",
+      "source_location": "L120",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "engine_run_runquery",
+      "target": "engine_run_checkcolumns"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/engine/run.js",
+      "source_location": "L146",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "engine_run_runquery",
+      "target": "engine_run_decimalscales"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/engine/run.js",
+      "source_location": "L130",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "engine_run_runquery",
+      "target": "engine_run_displaynames"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/lib/engine/run.js",
+      "source_location": "L116",
+      "weight": 1.0,
+      "source": "engine_run_runquery",
+      "target": "engine_parse_parseselect"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/lib/engine/run.js",
+      "source_location": "L121",
+      "weight": 1.0,
+      "source": "engine_run_runquery",
+      "target": "engine_parse_tosqlite"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/lib/engine/run.js",
+      "source_location": "L117",
+      "weight": 1.0,
+      "source": "engine_run_runquery",
+      "target": "engine_parse_walk"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/lib/engine/meta.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "engine_meta_runmeta",
+      "target": "engine_run_getschema"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/engine/meta.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_engine_meta_js",
+      "target": "engine_run_getschema"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/engine/parse.js",
+      "source_location": "L119",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_engine_parse_js",
+      "target": "engine_parse_anyall"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/engine/parse.js",
+      "source_location": "L19",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_engine_parse_js",
+      "target": "engine_parse_astcache"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/engine/parse.js",
+      "source_location": "L78",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_engine_parse_js",
+      "target": "engine_parse_containsmysql8only"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/engine/parse.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_engine_parse_js",
+      "target": "engine_parse_mysqlerror"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/engine/parse.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_engine_parse_js",
+      "target": "engine_parse_opt"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/engine/parse.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_engine_parse_js",
+      "target": "engine_parse_parser"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/engine/parse.js",
+      "source_location": "L22",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_engine_parse_js",
+      "target": "engine_parse_parseselect"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/engine/parse.js",
+      "source_location": "L101",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_engine_parse_js",
+      "target": "engine_parse_resolvenatural"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/engine/parse.js",
+      "source_location": "L116",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_engine_parse_js",
+      "target": "engine_parse_tablenames"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/engine/parse.js",
+      "source_location": "L91",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_engine_parse_js",
+      "target": "engine_parse_tosqlite"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/engine/parse.js",
+      "source_location": "L63",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_engine_parse_js",
+      "target": "engine_parse_walk"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/engine/parse.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "engine_parse_mysqlerror",
+      "target": "engine_parse_mysqlerror_constructor"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/engine/parse.js",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "engine_parse_mysqlerror",
+      "target": "engine_parse_mysqlerror_full"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/engine/parse.js",
+      "source_location": "L50",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "engine_parse_parseselect",
+      "target": "engine_parse_containsmysql8only"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/engine/parse.js",
+      "source_location": "L50",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "engine_parse_parseselect",
+      "target": "engine_parse_walk"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/engine/parse.js",
+      "source_location": "L80",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "engine_parse_containsmysql8only",
+      "target": "engine_parse_walk"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/engine/parse.js",
+      "source_location": "L118",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "engine_parse_tablenames",
+      "target": "engine_parse_walk"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/engine/parse.js",
+      "source_location": "L93",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "engine_parse_tosqlite",
+      "target": "engine_parse_walk"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/engine/meta.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_engine_meta_js",
+      "target": "engine_meta_runmeta"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/questions.js",
+      "source_location": "L26",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_questions_js",
+      "target": "data_questions_publicquestion"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/questions.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_questions_js",
+      "target": "data_questions_questions"
+    },
+    {
+      "relation": "re_exports",
+      "context": "re-export",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/questions.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_questions_js",
+      "target": "data_topics_dataset_labels"
+    },
+    {
+      "relation": "re_exports",
+      "context": "re-export",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/questions.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_questions_js",
+      "target": "data_topics_topics"
+    },
+    {
+      "relation": "re_exports",
+      "context": "export",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/questions.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_questions_js",
+      "target": "src_data_topics_js"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/topics.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_topics_js",
+      "target": "data_topics_dataset_labels"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/topics.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_topics_js",
+      "target": "data_topics_topics"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L32",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "readme_md",
+      "target": "database_mock_quiz_readme_deploy_on_vercel"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "readme_md",
+      "target": "database_mock_quiz_readme_getting_started"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L23",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "readme_md",
+      "target": "database_mock_quiz_readme_learn_more"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "database_mock_quiz_readme_getting_started",
+      "target": "database_mock_quiz_readme_codeblock_1"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENTS.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "agents_md",
+      "target": "database_mock_quiz_agents_this_is_not_the_next_js_you_know"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SQL Mock Exam \u2014 Specification.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "sql_mock_exam_specification_md",
+      "target": "database_mock_quiz_sql_mock_exam_specification_sql_mock_exam_specification"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SQL Mock Exam \u2014 Specification.md",
+      "source_location": "L27",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "database_mock_quiz_sql_mock_exam_specification_sql_mock_exam_specification",
+      "target": "database_mock_quiz_sql_mock_exam_specification_functional_requirements"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SQL Mock Exam \u2014 Specification.md",
+      "source_location": "L281",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "database_mock_quiz_sql_mock_exam_specification_sql_mock_exam_specification",
+      "target": "database_mock_quiz_sql_mock_exam_specification_\u0e01\u0e32\u0e23\u0e15_\u0e14\u0e2a_\u0e19\u0e43\u0e08"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SQL Mock Exam \u2014 Specification.md",
+      "source_location": "L126",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "database_mock_quiz_sql_mock_exam_specification_sql_mock_exam_specification",
+      "target": "database_mock_quiz_sql_mock_exam_specification_\u0e01\u0e32\u0e23\u0e15\u0e23\u0e27\u0e08\u0e04_\u0e32\u0e15\u0e2d\u0e1a\u0e41\u0e25\u0e30\u0e04_\u0e14\u0e04\u0e30\u0e41\u0e19\u0e19"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SQL Mock Exam \u2014 Specification.md",
+      "source_location": "L77",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "database_mock_quiz_sql_mock_exam_specification_sql_mock_exam_specification",
+      "target": "database_mock_quiz_sql_mock_exam_specification_\u0e10\u0e32\u0e19\u0e02_\u0e2d\u0e21_\u0e25\u0e15_\u0e27\u0e2d\u0e22_\u0e32\u0e07\u0e41\u0e25\u0e30\u0e04\u0e25_\u0e07\u0e02_\u0e2d\u0e2a\u0e2d\u0e1a"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SQL Mock Exam \u2014 Specification.md",
+      "source_location": "L19",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "database_mock_quiz_sql_mock_exam_specification_sql_mock_exam_specification",
+      "target": "database_mock_quiz_sql_mock_exam_specification_\u0e1c_\u0e43\u0e0a_\u0e41\u0e25\u0e30_user_flow"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SQL Mock Exam \u2014 Specification.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "database_mock_quiz_sql_mock_exam_specification_sql_mock_exam_specification",
+      "target": "database_mock_quiz_sql_mock_exam_specification_\u0e20\u0e32\u0e1e\u0e23\u0e27\u0e21\u0e41\u0e25\u0e30\u0e40\u0e1b_\u0e32\u0e2b\u0e21\u0e32\u0e22"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SQL Mock Exam \u2014 Specification.md",
+      "source_location": "L197",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "database_mock_quiz_sql_mock_exam_specification_sql_mock_exam_specification",
+      "target": "database_mock_quiz_sql_mock_exam_specification_\u0e2a\u0e16\u0e32\u0e19\u0e30\u0e04_\u0e32\u0e15\u0e2d\u0e1a\u0e41\u0e25\u0e30\u0e01\u0e32\u0e23\u0e1a_\u0e19\u0e17_\u0e01\u0e02_\u0e2d\u0e21_\u0e25"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SQL Mock Exam \u2014 Specification.md",
+      "source_location": "L50",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "database_mock_quiz_sql_mock_exam_specification_sql_mock_exam_specification",
+      "target": "database_mock_quiz_sql_mock_exam_specification_\u0e2b\u0e19_\u0e32\u0e08\u0e2d"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SQL Mock Exam \u2014 Specification.md",
+      "source_location": "L217",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "database_mock_quiz_sql_mock_exam_specification_sql_mock_exam_specification",
+      "target": "database_mock_quiz_sql_mock_exam_specification_\u0e40\u0e17\u0e04\u0e42\u0e19\u0e42\u0e25\u0e22_\u0e41\u0e25\u0e30\u0e02_\u0e2d\u0e01_\u0e32\u0e2b\u0e19\u0e14\u0e2d_\u0e19"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SQL Mock Exam \u2014 Specification.md",
+      "source_location": "L112",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "database_mock_quiz_sql_mock_exam_specification_\u0e10\u0e32\u0e19\u0e02_\u0e2d\u0e21_\u0e25\u0e15_\u0e27\u0e2d\u0e22_\u0e32\u0e07\u0e41\u0e25\u0e30\u0e04\u0e25_\u0e07\u0e02_\u0e2d\u0e2a\u0e2d\u0e1a",
+      "target": "database_mock_quiz_sql_mock_exam_specification_codeblock_1"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SQL Mock Exam \u2014 Specification.md",
+      "source_location": "L179",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "database_mock_quiz_sql_mock_exam_specification_\u0e01\u0e32\u0e23\u0e15\u0e23\u0e27\u0e08\u0e04_\u0e32\u0e15\u0e2d\u0e1a\u0e41\u0e25\u0e30\u0e04_\u0e14\u0e04\u0e30\u0e41\u0e19\u0e19",
+      "target": "database_mock_quiz_sql_mock_exam_specification_\u0e04\u0e27\u0e32\u0e21\u0e40\u0e23_\u0e27\u0e02\u0e2d\u0e07_grader"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SQL Mock Exam \u2014 Specification.md",
+      "source_location": "L149",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "database_mock_quiz_sql_mock_exam_specification_\u0e01\u0e32\u0e23\u0e15\u0e23\u0e27\u0e08\u0e04_\u0e32\u0e15\u0e2d\u0e1a\u0e41\u0e25\u0e30\u0e04_\u0e14\u0e04\u0e30\u0e41\u0e19\u0e19",
+      "target": "database_mock_quiz_sql_mock_exam_specification_\u0e40\u0e07_\u0e2d\u0e19\u0e44\u0e02\u0e02\u0e2d\u0e07\u0e42\u0e08\u0e17\u0e22"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SQL Mock Exam \u2014 Specification.md",
+      "source_location": "L167",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "database_mock_quiz_sql_mock_exam_specification_\u0e40\u0e07_\u0e2d\u0e19\u0e44\u0e02\u0e02\u0e2d\u0e07\u0e42\u0e08\u0e17\u0e22",
+      "target": "database_mock_quiz_sql_mock_exam_specification_codeblock_2"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SQL Mock Exam \u2014 Specification.md",
+      "source_location": "L240",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "database_mock_quiz_sql_mock_exam_specification_\u0e40\u0e17\u0e04\u0e42\u0e19\u0e42\u0e25\u0e22_\u0e41\u0e25\u0e30\u0e02_\u0e2d\u0e01_\u0e32\u0e2b\u0e19\u0e14\u0e2d_\u0e19",
+      "target": "database_mock_quiz_sql_mock_exam_specification_monaco_editor"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SQL Mock Exam \u2014 Specification.md",
+      "source_location": "L252",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "database_mock_quiz_sql_mock_exam_specification_\u0e40\u0e17\u0e04\u0e42\u0e19\u0e42\u0e25\u0e22_\u0e41\u0e25\u0e30\u0e02_\u0e2d\u0e01_\u0e32\u0e2b\u0e19\u0e14\u0e2d_\u0e19",
+      "target": "database_mock_quiz_sql_mock_exam_specification_\u0e01\u0e32\u0e23\u0e08_\u0e32\u0e25\u0e2d\u0e07_mysql_5_7"
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "3cac638835c4160e66583677dad2bb2af435f9af"
+}

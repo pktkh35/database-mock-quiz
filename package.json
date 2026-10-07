@@ -2,15 +2,23 @@
   "name": "database-mock-quiz",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "check": "node scripts/check.mjs",
+    "predev": "node scripts/check.mjs",
+    "prebuild": "node scripts/check.mjs"
   },
   "dependencies": {
+    "@monaco-editor/react": "^4.7.0",
+    "monaco-editor": "^0.57.0",
     "next": "16.4.0",
+    "node-sql-parser": "^5.4.0",
     "react": "19.3.0",
-    "react-dom": "19.3.0"
+    "react-dom": "19.3.0",
+    "sql.js": "^1.14.2"
   },
   "devDependencies": {
     "@tailwindcss/turbopack": "^4",

@@ -1,26 +1,132 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --bg: #ffffff;
+  --surface: #fafaf9;
+  --line: #e7e5e4;
+  --fg: #1c1917;
+  --muted: #78716c;
+  --primary: #f26522;
+  --primary-hover: #d9531a;
+  --primary-strong: #c2410c;
+  --primary-soft: #fef1ea;
+  --ok: #15803d;
+  --bad: #b91c1c;
+  --overlay: rgb(28 25 23 / 0.4);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --bg: #0c0a09;
+    --surface: #151312;
+    --line: #2a2624;
+    --fg: #f5f5f4;
+    --muted: #a8a29e;
+    --primary-hover: #ff7a3d;
+    --primary-strong: #ff8a4c;
+    --primary-soft: #2a1a10;
+    --ok: #4ade80;
+    --bad: #f87171;
+    --overlay: rgb(0 0 0 / 0.6);
   }
 }
 
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-line: var(--line);
+  --color-fg: var(--fg);
+  --color-muted: var(--muted);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-strong: var(--primary-strong);
+  --color-primary-soft: var(--primary-soft);
+  --color-ok: var(--ok);
+  --color-bad: var(--bad);
+  --font-sans: var(--font-geist-sans), var(--font-thai), system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+}
+
+html {
+  color-scheme: light dark;
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+button,
+[role="button"],
+[role="tab"],
+[role="checkbox"],
+[role="radio"],
+summary,
+select,
+label:has(input),
+a[href] {
+  cursor: pointer;
+}
+
+button:disabled,
+[aria-disabled="true"] {
+  cursor: not-allowed;
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg border border-line bg-bg px-4 py-2 text-sm font-medium text-fg transition-colors hover:bg-surface disabled:opacity-40 disabled:hover:bg-bg;
+  }
+  .btn-primary {
+    @apply border-primary bg-primary font-semibold text-white hover:bg-primary-hover disabled:hover:bg-primary;
+  }
+  .btn-ghost {
+    @apply border-transparent bg-transparent hover:bg-surface;
+  }
+  .chip {
+    @apply inline-flex items-center gap-1 rounded-md border border-line px-2 py-0.5 text-xs text-muted;
+  }
+  .label {
+    @apply text-xs font-medium uppercase tracking-wide text-muted;
+  }
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes pop {
+  from { opacity: 0; transform: scale(0.97) translateY(8px); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes grow {
+  from { grid-template-rows: 0fr; opacity: 0; }
+  to { grid-template-rows: 1fr; opacity: 1; }
+}
+
+.anim-page { animation: fade-up 0.28s ease-out both; }
+.anim-fade { animation: fade-in 0.2s ease-out both; }
+.anim-pop { animation: pop 0.2s ease-out both; }
+.anim-grow { display: grid; animation: grow 0.2s ease-out both; }
+.anim-grow > * { overflow: hidden; }
+
+button, a, summary, [role="tab"], [role="checkbox"], [role="radio"] {
+  transition: background-color 0.15s, border-color 0.15s, color 0.15s, opacity 0.15s, transform 0.1s;
+}
+button:active:not(:disabled) { transform: scale(0.98); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
 }
