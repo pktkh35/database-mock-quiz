@@ -22,7 +22,7 @@ for (const q of questions) {
   if (!q.objective || q.objective.length < 10) problems.push(`${tag} ไม่มี objective (วัตถุประสงค์ของโจทย์)`);
   if (!q.rules || !((q.rules.require?.length ?? 0) + (q.rules.forbid?.length ?? 0) + (q.rules.tables?.length ?? 0))) problems.push(`${tag} ไม่มี rules ที่ตรวจเทคนิคตามวัตถุประสงค์`);
   if (!["select", "join", "outer", "agg", "sub"].includes(q.topic)) problems.push(`${tag} topic ไม่ถูกต้อง: ${q.topic}`);
-  if (!["hr", "food", "sales", "shop", "university", "library"].includes(q.dataset)) problems.push(`${tag} dataset ไม่ถูกต้อง: ${q.dataset}`);
+  if (!["hr", "food", "sales", "shop", "university", "library", "classic"].includes(q.dataset)) problems.push(`${tag} dataset ไม่ถูกต้อง: ${q.dataset}`);
   try {
     const e = await buildExpected(q);
     expected[q.id] = e;
@@ -33,7 +33,16 @@ for (const q of questions) {
       const dup = new Set(rows.map((r) => JSON.stringify(r))).size !== rows.length;
       if (dup) problems.push(`${tag} ordered = true แต่ผลลัพธ์มีแถวซ้ำ (ลำดับไม่แน่นอน)`);
     }
-    if (q.example) await runQuery(q.dataset, q.example.sql);
+    if (q.example) {
+      const ex = await runQuery(q.dataset, q.example.sql);
+      const full = normalizeRows(e.rows, false).map((r) => JSON.stringify(r));
+      const part = normalizeRows(ex.rows, false).map((r) => JSON.stringify(r));
+      if (ex.rows.length >= e.count) {
+        problems.push(`${tag} example ได้ผลลัพธ์เท่ากับเฉลยทั้งหมด (${ex.rows.length}/${e.count} แถว) ต้องตัดให้เหลือเพียงบางส่วน เช่น ใช้ LIMIT`);
+      } else if (ex.columns.length !== e.columns.length || !part.every((r) => full.includes(r))) {
+        problems.push(`${tag} example ต้องเป็นส่วนหนึ่งของเฉลย (คอลัมน์และแถวต้องตรงกับเฉลย แต่มีแถวน้อยกว่า)`);
+      }
+    }
     const r = checkRules(q.rules, q.sql);
     if (!r.pass) problems.push(`${tag} เฉลยไม่ผ่านเงื่อนไขของตัวเอง: ${r.chips.filter((c) => !c.ok).map((c) => c.token).join(", ")}`);
   } catch (err) {

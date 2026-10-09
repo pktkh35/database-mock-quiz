@@ -1,16 +1,16 @@
-# Graph Report - database-mock-quiz  (2026-10-07)
+# Graph Report - database-mock-quiz  (2026-10-09)
 
 ## Corpus Check
-- 40 files · ~20,836 words
+- 41 files · ~31,803 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 185 nodes · 245 edges · 18 communities (13 shown, 5 thin omitted)
+- 187 nodes · 247 edges · 18 communities (13 shown, 5 thin omitted)
 - Extraction: 97% EXTRACTED · 3% INFERRED · 0% AMBIGUOUS · INFERRED: 7 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `9cf5ddf4`
+- Built from commit: `a7eafa30`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -61,7 +61,7 @@
 
 ### Community 0 - "Community 0"
 Cohesion: 0.10
-Nodes (25): questions, DATASET_LABELS, TOPICS, buildExpected(), byId, gradeAll(), gradeOne(), hashRows() (+17 more)
+Nodes (27): questions, DATASET_LABELS, TOPICS, buildExpected(), byId, gradeAll(), gradeOne(), hashRows() (+19 more)
 
 ### Community 1 - "Community 1"
 Cohesion: 0.19
@@ -108,7 +108,7 @@ Cohesion: 0.19
 Nodes (6): ExamView(), SqlEditor, useNow(), GLYPH, questionStatus(), STATUS_LABEL
 
 ## Knowledge Gaps
-- **68 isolated node(s):** `@/*`, `regions`, `nextConfig`, `name`, `version` (+63 more)
+- **70 isolated node(s):** `@/*`, `regions`, `nextConfig`, `name`, `version` (+65 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **5 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -116,11 +116,11 @@ Nodes (6): ExamView(), SqlEditor, useNow(), GLYPH, questionStatus(), STATUS_LABE
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `runQuery()` connect `Community 1` to `Community 16`, `Community 0`?**
-  _High betweenness centrality (0.019) - this node is a cross-community bridge._
+  _High betweenness centrality (0.020) - this node is a cross-community bridge._
 - **What connects `@/*`, `regions`, `nextConfig` to the rest of the system?**
-  _68 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _70 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
-  _Cohesion score 0.10416666666666667 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.0957983193277311 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**
   _Cohesion score 0.13333333333333333 - nodes in this community are weakly interconnected._
 - **Should `Community 3` be split into smaller, more focused modules?**

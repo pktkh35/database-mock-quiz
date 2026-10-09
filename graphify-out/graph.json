@@ -373,10 +373,28 @@
       "norm_label": "rows"
     },
     {
+      "label": "full",
+      "file_type": "code",
+      "source_file": "scripts/check.mjs",
+      "source_location": "L38",
+      "id": "scripts_check_full",
+      "community": 0,
+      "norm_label": "full"
+    },
+    {
+      "label": "part",
+      "file_type": "code",
+      "source_file": "scripts/check.mjs",
+      "source_location": "L39",
+      "id": "scripts_check_part",
+      "community": 0,
+      "norm_label": "part"
+    },
+    {
       "label": "r",
       "file_type": "code",
       "source_file": "scripts/check.mjs",
-      "source_location": "L37",
+      "source_location": "L46",
       "id": "scripts_check_r",
       "community": 0,
       "norm_label": "r"
@@ -385,7 +403,7 @@
       "label": "times",
       "file_type": "code",
       "source_file": "scripts/check.mjs",
-      "source_location": "L52",
+      "source_location": "L61",
       "id": "scripts_check_times",
       "community": 0,
       "norm_label": "times"
@@ -394,7 +412,7 @@
       "label": "t0",
       "file_type": "code",
       "source_file": "scripts/check.mjs",
-      "source_location": "L55",
+      "source_location": "L64",
       "id": "scripts_check_t0",
       "community": 0,
       "norm_label": "t0"
@@ -688,37 +706,10 @@
       "norm_label": "sqleditor.js"
     },
     {
-      "label": "KEYWORDS",
-      "file_type": "code",
-      "source_file": "src/components/SqlEditor.js",
-      "source_location": "L15",
-      "id": "components_sqleditor_keywords",
-      "community": 8,
-      "norm_label": "keywords"
-    },
-    {
-      "label": "schemaRef",
-      "file_type": "code",
-      "source_file": "src/components/SqlEditor.js",
-      "source_location": "L23",
-      "id": "components_sqleditor_schemaref",
-      "community": 8,
-      "norm_label": "schemaref"
-    },
-    {
-      "label": "registerCompletion()",
-      "file_type": "code",
-      "source_file": "src/components/SqlEditor.js",
-      "source_location": "L26",
-      "id": "components_sqleditor_registercompletion",
-      "community": 8,
-      "norm_label": "registercompletion()"
-    },
-    {
       "label": "defineThemes()",
       "file_type": "code",
       "source_file": "src/components/SqlEditor.js",
-      "source_location": "L51",
+      "source_location": "L15",
       "id": "components_sqleditor_definethemes",
       "community": 8,
       "norm_label": "definethemes()"
@@ -727,7 +718,7 @@
       "label": "SqlEditor()",
       "file_type": "code",
       "source_file": "src/components/SqlEditor.js",
-      "source_location": "L69",
+      "source_location": "L33",
       "id": "components_sqleditor_sqleditor",
       "community": 8,
       "norm_label": "sqleditor()"
@@ -1420,7 +1411,7 @@
       "label": "publicQuestion()",
       "file_type": "code",
       "source_file": "src/data/questions.js",
-      "source_location": "L905",
+      "source_location": "L2501",
       "id": "data_questions_publicquestion",
       "community": 0,
       "norm_label": "publicquestion()"
@@ -1667,6 +1658,33 @@
       "id": "database_mock_quiz_sql_mock_exam_specification_\u0e01\u0e32\u0e23\u0e15_\u0e14\u0e2a_\u0e19\u0e43\u0e08",
       "community": 4,
       "norm_label": "\u0e01\u0e32\u0e23\u0e15\u0e31\u0e14\u0e2a\u0e34\u0e19\u0e43\u0e08"
+    },
+    {
+      "label": "KEYWORDS",
+      "file_type": "code",
+      "source_file": "src/components/SqlEditor.js",
+      "source_location": "L15",
+      "community": 8,
+      "norm_label": "keywords",
+      "id": "components_sqleditor_keywords"
+    },
+    {
+      "label": "schemaRef",
+      "file_type": "code",
+      "source_file": "src/components/SqlEditor.js",
+      "source_location": "L23",
+      "community": 8,
+      "norm_label": "schemaref",
+      "id": "components_sqleditor_schemaref"
+    },
+    {
+      "label": "registerCompletion()",
+      "file_type": "code",
+      "source_file": "src/components/SqlEditor.js",
+      "source_location": "L26",
+      "community": 8,
+      "norm_label": "registercompletion()",
+      "id": "components_sqleditor_registercompletion"
     }
   ],
   "links": [
@@ -2052,9 +2070,9 @@
       "source_file": "scripts/check.mjs",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_check_mjs",
-      "target": "scripts_check_allids",
-      "confidence_score": 1.0
+      "target": "scripts_check_allids"
     },
     {
       "relation": "contains",
@@ -2070,11 +2088,31 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/check.mjs",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "scripts_check_mjs",
+      "target": "scripts_check_full",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/check.mjs",
       "source_location": "L10",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "scripts_check_mjs",
       "target": "scripts_check_ids"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/check.mjs",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "scripts_check_mjs",
+      "target": "scripts_check_part",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -4216,5 +4254,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "9cf5ddf4ef742cb93c7a9527f36be96577ca1df1"
+  "built_at_commit": "a7eafa30cda2f035a8d414522e09fa345be4ee9c"
 }

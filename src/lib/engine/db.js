@@ -2,7 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import initSqlJs from "sql.js";
 
-export const DATASETS = ["hr", "food", "sales", "shop", "university", "library"];
+export const DATASETS = ["hr", "food", "sales", "shop", "university", "library", "classic"];
 
 let ready = null;
 

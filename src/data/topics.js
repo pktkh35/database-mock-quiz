@@ -14,4 +14,5 @@ export const DATASET_LABELS = {
   shop: "ร้านค้าออนไลน์",
   university: "มหาวิทยาลัย",
   library: "ห้องสมุด",
+  classic: "โมเดลรถ (Classic Models)",
 };

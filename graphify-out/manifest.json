@@ -20,8 +20,8 @@
     "semantic_hash": ""
   },
   "/Users/pktkh35/Documents/GitHub/database-mock-quiz/scripts/check.mjs": {
-    "mtime": 1791352092.2534518,
-    "ast_hash": "911516269a47557ec4b7d1027e57db25",
+    "mtime": 1791554789.3672545,
+    "ast_hash": "b99cf8c8e50d66547bd62ab5947025d1",
     "semantic_hash": ""
   },
   "/Users/pktkh35/Documents/GitHub/database-mock-quiz/src/app/layout.js": {
@@ -70,8 +70,8 @@
     "semantic_hash": ""
   },
   "/Users/pktkh35/Documents/GitHub/database-mock-quiz/src/components/SqlEditor.js": {
-    "mtime": 1791349367.2695165,
-    "ast_hash": "81d29a12557fb344c2ae28d4d36b5fb6",
+    "mtime": 1791554601.1305096,
+    "ast_hash": "d29e57eae4c6a35ad46178c54fbff97c",
     "semantic_hash": ""
   },
   "/Users/pktkh35/Documents/GitHub/database-mock-quiz/src/components/ConfirmDialog.js": {
@@ -120,8 +120,8 @@
     "semantic_hash": ""
   },
   "/Users/pktkh35/Documents/GitHub/database-mock-quiz/src/lib/engine/db.js": {
-    "mtime": 1791350500.940548,
-    "ast_hash": "35234be90e3a650f08dfdb7caae48564",
+    "mtime": 1791554585.7624917,
+    "ast_hash": "6d682e59a1ad4db2a0dbf1ed7ecc20df",
     "semantic_hash": ""
   },
   "/Users/pktkh35/Documents/GitHub/database-mock-quiz/src/lib/engine/run.js": {
@@ -135,13 +135,13 @@
     "semantic_hash": ""
   },
   "/Users/pktkh35/Documents/GitHub/database-mock-quiz/src/data/questions.js": {
-    "mtime": 1791352083.5358574,
-    "ast_hash": "da06e80d123e5ac0531cc14bce001b59",
+    "mtime": 1791555004.2122612,
+    "ast_hash": "f25e0a45d4dec85674d11f857a7478d6",
     "semantic_hash": ""
   },
   "/Users/pktkh35/Documents/GitHub/database-mock-quiz/src/data/topics.js": {
-    "mtime": 1791350500.9614122,
-    "ast_hash": "ab4dce58217956e4cfbdd0ea4e363399",
+    "mtime": 1791554585.7675562,
+    "ast_hash": "6d5bb2da18746393f24766841fff8725",
     "semantic_hash": ""
   },
   "/Users/pktkh35/Documents/GitHub/database-mock-quiz/src/data/datasets/hr.sql": {
@@ -222,6 +222,11 @@
   "/Users/pktkh35/Documents/GitHub/database-mock-quiz/src/data/datasets/library.sql": {
     "mtime": 1791350786.1930661,
     "ast_hash": "2bc4588db3ea1ada70e8e026d5dfd68b",
+    "semantic_hash": ""
+  },
+  "/Users/pktkh35/Documents/GitHub/database-mock-quiz/src/data/datasets/classic.sql": {
+    "mtime": 1791554753.851788,
+    "ast_hash": "e97bceef0a8cd25ac4b074b2ae837861",
     "semantic_hash": ""
   }
 }

@@ -12,42 +12,6 @@ if (typeof window !== "undefined") {
   loader.config({ monaco });
 }
 
-const KEYWORDS = [
-  "SELECT", "FROM", "WHERE", "GROUP BY", "HAVING", "ORDER BY", "LIMIT", "OFFSET", "DISTINCT", "AS",
-  "JOIN", "INNER JOIN", "LEFT JOIN", "RIGHT JOIN", "ON", "AND", "OR", "NOT", "IN", "NOT IN", "EXISTS",
-  "BETWEEN", "LIKE", "IS NULL", "IS NOT NULL", "ASC", "DESC", "CASE", "WHEN", "THEN", "ELSE", "END",
-  "COUNT", "SUM", "AVG", "MIN", "MAX", "CONCAT", "IFNULL", "IF", "YEAR", "MONTH", "DAY", "DATEDIFF",
-  "DATE_FORMAT", "LEFT", "RIGHT", "LOCATE", "TRUNCATE", "NOW", "CURDATE", "DIV", "UNION",
-];
-
-let schemaRef = { current: {} };
-let providerRegistered = false;
-
-function registerCompletion() {
-  if (providerRegistered) return;
-  providerRegistered = true;
-  monaco.languages.registerCompletionItemProvider("mysql", {
-    triggerCharacters: ["."],
-    provideCompletionItems(model, position) {
-      const word = model.getWordUntilPosition(position);
-      const range = {
-        startLineNumber: position.lineNumber, endLineNumber: position.lineNumber,
-        startColumn: word.startColumn, endColumn: word.endColumn,
-      };
-      const K = monaco.languages.CompletionItemKind;
-      const tables = schemaRef.current;
-      const suggestions = [
-        ...KEYWORDS.map((k) => ({ label: k, kind: K.Keyword, insertText: k, range })),
-        ...Object.keys(tables).map((t) => ({ label: t, kind: K.Class, insertText: t, detail: "table", range })),
-        ...[...new Map(
-          Object.entries(tables).flatMap(([t, cols]) => cols.map((c) => [c.name, `${t}.${c.type}`]))
-        )].map(([name, detail]) => ({ label: name, kind: K.Field, insertText: name, detail, range })),
-      ];
-      return { suggestions };
-    },
-  });
-}
-
 function defineThemes() {
   const css = getComputedStyle(document.documentElement);
   const get = (v) => css.getPropertyValue(v).trim() || undefined;
@@ -67,15 +31,11 @@ function defineThemes() {
 }
 
 export default function SqlEditor({
-  value, onChange, onExecute, onSave, schema, errorLine, errorMessage, ariaLabel, lines = 8,
+  value, onChange, onExecute, onSave, errorLine, errorMessage, ariaLabel, lines = 8,
 }) {
   const cb = useRef({});
   cb.current = { onExecute, onSave, onChange };
   const editorRef = useRef(null);
-
-  useEffect(() => {
-    schemaRef.current = schema ?? {};
-  }, [schema]);
 
   useEffect(() => {
     const ed = editorRef.current;
@@ -96,7 +56,6 @@ export default function SqlEditor({
 
   const mount = (ed) => {
     editorRef.current = ed;
-    registerCompletion();
     ed.addCommand(monaco.KeyMod.CtrlCmd | monaco.KeyCode.Enter, () => cb.current.onExecute?.());
     ed.addCommand(monaco.KeyMod.CtrlCmd | monaco.KeyCode.KeyS, () => cb.current.onSave?.());
     const dark = matchMedia("(prefers-color-scheme: dark)");
@@ -133,6 +92,12 @@ export default function SqlEditor({
           ariaLabel: ariaLabel ?? "SQL editor",
           tabSize: 2,
           fixedOverflowWidgets: true,
+          quickSuggestions: false,
+          suggestOnTriggerCharacters: false,
+          wordBasedSuggestions: "off",
+          acceptSuggestionOnEnter: "off",
+          tabCompletion: "off",
+          parameterHints: { enabled: false },
         }}
       />
     </div>
