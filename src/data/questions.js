@@ -473,7 +473,7 @@ export const questions = [
   },
   {
     id: "a15", topic: "agg", dataset: "hr",
-    text: "แต่ละภูมิภาคมีพนักงานทำงานอยู่กี่คน แสดงชื่อภูมิภาคและจำนวนพนักงาน",
+    text: "แต่ละภูมิภาคมีพนักงานทำงานอยู่กี่คน แสดงชื่อภูมิภาคและจำนวนพนักงาน (เฉพาะภูมิภาคที่มีพนักงานทำงานอยู่)",
     objective: "JOIN 5 ตารางแล้วสรุปด้วย GROUP BY + COUNT",
     rules: { require: ["COUNT", "GROUP BY"], tables: ["regions", "countries", "locations", "departments", "employees"] },
     sql: "SELECT r.region_name, COUNT(e.employee_id) FROM employees e JOIN departments d ON e.department_id = d.department_id JOIN locations l ON d.location_id = l.location_id JOIN countries c ON l.country_id = c.country_id JOIN regions r ON c.region_id = r.region_id GROUP BY r.region_id, r.region_name",
@@ -619,7 +619,7 @@ export const questions = [
   },
   {
     id: "s37", topic: "select", dataset: "hr",
-    text: "แสดงรหัสเมืองปลายทางที่ไม่ซ้ำ: แสดงรหัสประเทศ (country_id) ที่มีสำนักงานตั้งอยู่ โดยไม่แสดงค่าซ้ำ เรียง A-Z",
+    text: "แสดงรหัสประเทศ (country_id) ที่มีสำนักงานตั้งอยู่ โดยไม่แสดงค่าซ้ำ เรียง A-Z",
     objective: "DISTINCT + ORDER BY",
     rules: { require: ["DISTINCT","ORDER BY"] },
     sql: "SELECT DISTINCT country_id FROM locations ORDER BY country_id",
@@ -635,7 +635,7 @@ export const questions = [
   },
   {
     id: "s39", topic: "select", dataset: "hr",
-    text: "แสดงนามสกุลและเงินเดือน ของพนักงานแผนก 80 ที่มีค่าคอมมิชชันตั้งแต่ 0.25 ขึ้นไป หรือเงินเดือนเกิน 12,000",
+    text: "แสดงนามสกุลและเงินเดือน ของพนักงานแผนก 80 โดยต้องมีค่าคอมมิชชันตั้งแต่ 0.25 ขึ้นไป หรือเงินเดือนเกิน 12,000 อย่างใดอย่างหนึ่ง (เงื่อนไขแผนก 80 ใช้กับทุกคน)",
     objective: "OR ระหว่างสองเงื่อนไข",
     rules: { require: ["OR"] },
     sql: "SELECT last_name, salary FROM employees WHERE department_id = 80 AND (commission_pct >= 0.25 OR salary > 12000)",
@@ -731,10 +731,10 @@ export const questions = [
   },
   {
     id: "s51", topic: "select", dataset: "classic",
-    text: "แสดงชื่อ นามสกุล และอีเมล ของพนักงานที่ตำแหน่งงานมีคำว่า Sales Manager",
+    text: "แสดงชื่อ นามสกุล และอีเมล ของพนักงานที่ตำแหน่งงานมีคำว่า Manager",
     objective: "LIKE ในตำแหน่งงาน",
     rules: { require: ["LIKE"] },
-    sql: "SELECT firstName, lastName, email FROM employees WHERE jobTitle LIKE 'Sales Manager%' OR jobTitle LIKE 'Sale Manager%'",
+    sql: "SELECT firstName, lastName, email FROM employees WHERE jobTitle LIKE '%Manager%'",
     ordered: false,
   },
   {
@@ -803,7 +803,7 @@ export const questions = [
   },
   {
     id: "s60", topic: "select", dataset: "library",
-    text: "แสดงชื่อหนังสือและปีที่พิมพ์ ของหนังสือที่พิมพ์ก่อนปี 2000 เรียงจากเก่าไปใหม่",
+    text: "แสดงชื่อหนังสือและปีที่พิมพ์ ของหนังสือที่พิมพ์ก่อนปี 2000 เรียงจากเก่าไปใหม่ ถ้าปีเท่ากันให้เรียงชื่อหนังสือ A-Z",
     objective: "WHERE + ORDER BY",
     rules: { require: ["WHERE","ORDER BY"] },
     sql: "SELECT title, published_year FROM books WHERE published_year < 2000 ORDER BY published_year, title",
@@ -886,7 +886,7 @@ export const questions = [
     text: "แสดงคู่พนักงานในแผนกเดียวกันที่ชื่อจริงเหมือนกัน (แสดงนามสกุลทั้งสองคนเป็น emp1, emp2 โดยให้ emp1 มีรหัสน้อยกว่า)",
     objective: "Self join จับคู่ภายในตารางเดียว",
     rules: { require: ["SELF JOIN","ON"] },
-    sql: "SELECT a.last_name AS emp1, b.last_name AS emp2 FROM employees a JOIN employees b ON a.first_name = b.first_name AND a.employee_id < b.employee_id",
+    sql: "SELECT a.last_name AS emp1, b.last_name AS emp2 FROM employees a JOIN employees b ON a.first_name = b.first_name AND a.department_id = b.department_id AND a.employee_id < b.employee_id",
     ordered: false,
   },
   {
@@ -1310,7 +1310,7 @@ export const questions = [
     text: "แสดงชื่อบริษัทลูกค้าที่มีวงเงินเครดิตสูงกว่าค่าเฉลี่ยวงเงินเครดิตของลูกค้าทั้งหมด",
     objective: "Single-row subquery กับ AVG",
     rules: { require: ["SUBQUERY_IN_WHERE","AVG"], forbid: ["JOIN"] },
-    sql: "SELECT customerName, creditLimit FROM customers WHERE creditLimit > (SELECT AVG(creditLimit) FROM customers)",
+    sql: "SELECT customerName FROM customers WHERE creditLimit > (SELECT AVG(creditLimit) FROM customers)",
     ordered: false,
   },
   {
@@ -1358,7 +1358,7 @@ export const questions = [
     text: "แสดงชื่อสินค้าที่ราคาขายแนะนำ (MSRP) สูงที่สุดในสายผลิตภัณฑ์ของตัวเอง",
     objective: "Correlated subquery กับ MAX",
     rules: { require: ["SUBQUERY_IN_WHERE","MAX"], forbid: ["JOIN"] },
-    sql: "SELECT productName, productLine, MSRP FROM products p WHERE MSRP = (SELECT MAX(MSRP) FROM products x WHERE x.productLine = p.productLine)",
+    sql: "SELECT productName FROM products p WHERE MSRP = (SELECT MAX(MSRP) FROM products x WHERE x.productLine = p.productLine)",
     ordered: false,
   },
   {
@@ -1366,7 +1366,7 @@ export const questions = [
     text: "แสดงเมืองและประเทศของสำนักงานที่มีพนักงานมากกว่าสำนักงานเฉลี่ยทั้งหมด โดยใช้ subquery ใน FROM นับพนักงานต่อสำนักงาน",
     objective: "Inline view + AVG ของ COUNT",
     rules: { require: ["SUBQUERY","COUNT"] },
-    sql: "SELECT o.city, o.country, t.cnt FROM offices o JOIN (SELECT officeCode, COUNT(*) AS cnt FROM employees GROUP BY officeCode) t ON o.officeCode = t.officeCode WHERE t.cnt > (SELECT AVG(c) FROM (SELECT COUNT(*) AS c FROM employees GROUP BY officeCode))",
+    sql: "SELECT o.city, o.country FROM offices o JOIN (SELECT officeCode, COUNT(*) AS cnt FROM employees GROUP BY officeCode) t ON o.officeCode = t.officeCode WHERE t.cnt > (SELECT AVG(c) FROM (SELECT COUNT(*) AS c FROM employees GROUP BY officeCode))",
     ordered: false,
   },
   {
@@ -1374,7 +1374,7 @@ export const questions = [
     text: "แสดงชื่อบริษัทลูกค้าที่ชำระเงินรวมมากกว่ายอดชำระเฉลี่ยรายลูกค้า โดยใช้ HAVING กับ subquery ใน FROM",
     objective: "HAVING + subquery ซ้อน",
     rules: { require: ["SUBQUERY","HAVING","SUM"] },
-    sql: "SELECT c.customerName, SUM(p.amount) FROM customers c JOIN payments p ON c.customerNumber = p.customerNumber GROUP BY c.customerNumber, c.customerName HAVING SUM(p.amount) > (SELECT AVG(t) FROM (SELECT SUM(amount) AS t FROM payments GROUP BY customerNumber))",
+    sql: "SELECT c.customerName FROM customers c JOIN payments p ON c.customerNumber = p.customerNumber GROUP BY c.customerNumber, c.customerName HAVING SUM(p.amount) > (SELECT AVG(t) FROM (SELECT SUM(amount) AS t FROM payments GROUP BY customerNumber))",
     ordered: false,
   },
   {
@@ -1390,7 +1390,7 @@ export const questions = [
     text: "แสดงชื่อบริษัทลูกค้าที่อยู่ในประเทศเดียวกับสำนักงานอย่างน้อยหนึ่งแห่ง (ใช้ IN กับ subquery)",
     objective: "IN กับ offices",
     rules: { require: ["SUBQUERY_IN_WHERE","IN"], forbid: ["JOIN"] },
-    sql: "SELECT customerName, country FROM customers WHERE country IN (SELECT country FROM offices)",
+    sql: "SELECT customerName FROM customers WHERE country IN (SELECT country FROM offices)",
     ordered: false,
   },
   {
@@ -1398,7 +1398,7 @@ export const questions = [
     text: "แสดงเลขที่ใบสั่งซื้อที่มียอดรวม (quantityOrdered × priceEach) สูงกว่าค่าเฉลี่ยยอดรวมต่อใบสั่งซื้อ",
     objective: "Subquery ใน HAVING ซ้อน FROM",
     rules: { require: ["SUBQUERY","HAVING","SUM"] },
-    sql: "SELECT orderNumber, SUM(quantityOrdered * priceEach) FROM orderdetails GROUP BY orderNumber HAVING SUM(quantityOrdered * priceEach) > (SELECT AVG(t) FROM (SELECT SUM(quantityOrdered * priceEach) AS t FROM orderdetails GROUP BY orderNumber))",
+    sql: "SELECT orderNumber FROM orderdetails GROUP BY orderNumber HAVING SUM(quantityOrdered * priceEach) > (SELECT AVG(t) FROM (SELECT SUM(quantityOrdered * priceEach) AS t FROM orderdetails GROUP BY orderNumber))",
     ordered: false,
   },
   {
@@ -1406,7 +1406,7 @@ export const questions = [
     text: "แสดงชื่อสินค้าที่ราคาต่ำกว่าสินค้าทุกชิ้นในหมวด Electronics (ใช้ ALL)",
     objective: "ALL กับ subquery",
     rules: { require: ["SUBQUERY_IN_WHERE","ALL"], forbid: ["JOIN"] },
-    sql: "SELECT name, price FROM products WHERE price < ALL (SELECT price FROM products WHERE category = 'Electronics')",
+    sql: "SELECT name FROM products WHERE price < ALL (SELECT price FROM products WHERE category = 'Electronics')",
     ordered: false,
   },
   {
@@ -1422,7 +1422,7 @@ export const questions = [
     text: "แสดงชื่อและสาขาของนักศึกษาที่ GPA สูงกว่า GPA เฉลี่ยของสาขาตัวเอง",
     objective: "Correlated subquery กับ AVG",
     rules: { require: ["SUBQUERY_IN_WHERE","AVG"], forbid: ["JOIN"] },
-    sql: "SELECT name, major, gpa FROM students s WHERE gpa > (SELECT AVG(gpa) FROM students x WHERE x.major = s.major)",
+    sql: "SELECT name, major FROM students s WHERE gpa > (SELECT AVG(gpa) FROM students x WHERE x.major = s.major)",
     ordered: false,
   },
   {
@@ -1438,7 +1438,7 @@ export const questions = [
     text: "แสดงชื่อหนังสือที่ราคาสูงกว่าราคาหนังสือเฉลี่ยของหมวดตัวเอง",
     objective: "Correlated subquery",
     rules: { require: ["SUBQUERY_IN_WHERE","AVG"], forbid: ["JOIN"] },
-    sql: "SELECT title, category, price FROM books b WHERE price > (SELECT AVG(price) FROM books x WHERE x.category = b.category)",
+    sql: "SELECT title FROM books b WHERE price > (SELECT AVG(price) FROM books x WHERE x.category = b.category)",
     ordered: false,
   },
   {
@@ -1565,7 +1565,7 @@ export const questions = [
   },
   {
     id: "o35", topic: "outer", dataset: "hr",
-    text: "แสดงนามสกุลพนักงานที่ไม่มีแผนก โดยให้แสดงชื่อแผนกเป็นคำว่า No Department (ตั้งชื่อคอลัมน์ว่า dept) ของพนักงานทั้งหมด",
+    text: "แสดงนามสกุลพนักงานทุกคน พร้อมชื่อแผนก (ตั้งชื่อคอลัมน์ว่า dept) พนักงานที่ไม่มีแผนกให้แสดงคำว่า No Department",
     objective: "LEFT JOIN + IFNULL แทน NULL ด้วยข้อความ",
     rules: { require: ["LEFT JOIN","IFNULL"] },
     sql: "SELECT e.last_name, IFNULL(d.department_name, 'No Department') AS dept FROM employees e LEFT JOIN departments d ON e.department_id = d.department_id",
@@ -1581,7 +1581,7 @@ export const questions = [
   },
   {
     id: "o37", topic: "outer", dataset: "hr",
-    text: "แสดงชื่อแผนกที่ไม่มีผู้จัดการแผนก (manager_id เป็น NULL) โดยแสดงนามสกุลผู้จัดการร่วมด้วยสำหรับแผนกที่มี",
+    text: "แสดงชื่อแผนกทุกแผนก พร้อมนามสกุลผู้จัดการแผนก แผนกที่ไม่มีผู้จัดการ (manager_id เป็น NULL) ก็ต้องแสดงด้วย (นามสกุลเว้นว่าง)",
     objective: "LEFT JOIN ตารางพนักงานเพื่อดึงผู้จัดการ ผ่านแผนกทั้งหมด",
     rules: { require: ["LEFT JOIN","ON"] },
     sql: "SELECT d.department_name, e.last_name FROM departments d LEFT JOIN employees e ON d.manager_id = e.employee_id",
@@ -1717,7 +1717,7 @@ export const questions = [
   },
   {
     id: "o54", topic: "outer", dataset: "classic",
-    text: "แสดงชื่อบริษัทลูกค้าที่ไม่มีตัวแทนขาย (salesRepEmployeeNumber เป็น NULL) โดยแสดงชื่อพนักงานขายเป็น No Rep (ตั้งชื่อ rep) ของลูกค้าทุกรายในประเทศ USA, France หรือ Singapore",
+    text: "แสดงชื่อบริษัทลูกค้าทุกรายในประเทศ USA, France หรือ Singapore พร้อมนามสกุลพนักงานขาย (ตั้งชื่อ rep) ลูกค้าที่ไม่มีตัวแทนขาย (salesRepEmployeeNumber เป็น NULL) ให้แสดง No Rep",
     objective: "LEFT JOIN + IFNULL ร่วมกับ IN",
     rules: { require: ["LEFT JOIN","IFNULL","IN"] },
     sql: "SELECT c.customerName, IFNULL(e.lastName, 'No Rep') AS rep FROM customers c LEFT JOIN employees e ON c.salesRepEmployeeNumber = e.employeeNumber WHERE c.country IN ('USA','France','Singapore')",
@@ -1829,7 +1829,7 @@ export const questions = [
   },
   {
     id: "a29", topic: "agg", dataset: "classic",
-    text: "แสดงข้อความ 'In 2004, Average payment is ' ต่อด้วยค่าเฉลี่ยจำนวนเงินที่จ่ายในปี 2004 (ตั้งชื่อคอลัมน์ `Average payment description`)",
+    text: "แสดงข้อความ 'In 2004, Average payment is ' ต่อด้วยค่าเฉลี่ยจำนวนเงินที่จ่ายในปี 2004 (ตั้งชื่อคอลัมน์ `Average payment description`) กรองปีโดยดูจากรูปแบบข้อความของวันที่",
     objective: "CONCAT + AVG + กรองปีด้วย LIKE",
     rules: { require: ["CONCAT","AVG","LIKE"] },
     sql: "SELECT CONCAT('In 2004, Average payment is ', AVG(amount)) AS `Average payment description` FROM payments WHERE paymentDate LIKE '2004%'",
@@ -1893,7 +1893,7 @@ export const questions = [
   },
   {
     id: "a37", topic: "agg", dataset: "classic",
-    text: "แสดงค่าเฉลี่ยเครดิตของลูกค้าในแต่ละหมายเลขพนักงานขาย เฉพาะพนักงานที่ดูแลลูกค้ามากกว่า 1 ราย",
+    text: "แสดงค่าเฉลี่ยเครดิตของลูกค้าในแต่ละหมายเลขพนักงานขาย เฉพาะพนักงานที่ดูแลลูกค้ามากกว่า 1 ราย (แสดงเฉพาะค่าเฉลี่ย ไม่ต้องแสดงหมายเลขพนักงาน)",
     objective: "AVG + GROUP BY + HAVING COUNT",
     rules: { require: ["AVG","GROUP BY","HAVING","COUNT"] },
     sql: "SELECT AVG(creditLimit) FROM customers GROUP BY salesRepEmployeeNumber HAVING COUNT(salesRepEmployeeNumber) > 1",
@@ -1981,7 +1981,7 @@ export const questions = [
   },
   {
     id: "a48", topic: "agg", dataset: "classic",
-    text: "แสดงสถานะของใบสั่งซื้อ (status) และจำนวนใบสั่งซื้อในแต่ละสถานะ เรียงจากมากไปน้อย",
+    text: "แสดงสถานะของใบสั่งซื้อ (status) และจำนวนใบสั่งซื้อในแต่ละสถานะ เรียงจากมากไปน้อย ถ้าจำนวนเท่ากันให้เรียงสถานะ A-Z",
     objective: "COUNT + GROUP BY + ORDER BY",
     rules: { require: ["COUNT","GROUP BY","ORDER BY"] },
     sql: "SELECT status, COUNT(*) FROM orders GROUP BY status ORDER BY COUNT(*) DESC, status",
@@ -2021,9 +2021,9 @@ export const questions = [
   },
   {
     id: "a53", topic: "agg", dataset: "classic",
-    text: "แสดงจำนวนวันเฉลี่ยระหว่างวันสั่ง (orderDate) กับวันจัดส่ง (shippedDate) ของใบสั่งซื้อที่จัดส่งแล้ว ปัดเป็นทศนิยม 2 ตำแหน่ง ใช้ DATEDIFF",
+    text: "แสดงจำนวนวันเฉลี่ยระหว่างวันสั่ง (orderDate) กับวันจัดส่ง (shippedDate) ของใบสั่งซื้อที่จัดส่งแล้ว ตัดทิ้งเหลือทศนิยม 2 ตำแหน่งด้วย TRUNCATE (ไม่ใช่ปัดเศษ) ใช้ DATEDIFF",
     objective: "AVG กับ DATEDIFF โดย NULL ถูกข้ามอัตโนมัติ",
-    rules: { require: ["AVG","DATEDIFF"] },
+    rules: { require: ["AVG","DATEDIFF","TRUNCATE"] },
     sql: "SELECT TRUNCATE(AVG(DATEDIFF(shippedDate, orderDate)), 2) FROM orders",
     ordered: false,
   },
