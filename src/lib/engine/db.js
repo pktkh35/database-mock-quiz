@@ -70,15 +70,17 @@ async function init() {
   const SQL = await initSqlJs({ wasmBinary });
   const dbs = {};
   const schema = {};
+  const scripts = {};
   for (const name of DATASETS) {
     const script = fs.readFileSync(path.join(root, "src/data/datasets", `${name}.sql`), "utf8");
+    scripts[name] = script;
     const db = new SQL.Database();
     db.run(script);
     register(db);
     dbs[name] = db;
     schema[name] = readSchema(db);
   }
-  return { dbs, schema };
+  return { SQL, dbs, schema, scripts };
 }
 
 function readSchema(db) {

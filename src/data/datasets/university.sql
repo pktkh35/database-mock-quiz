@@ -14,13 +14,16 @@ CREATE TABLE courses (
   course_id VARCHAR(10) PRIMARY KEY COLLATE NOCASE,
   title VARCHAR(60) COLLATE NOCASE,
   credits INT,
-  instructor_id INT
+  instructor_id INT,
+  FOREIGN KEY (instructor_id) REFERENCES instructors(instructor_id)
 );
 CREATE TABLE enrollments (
   student_id INT,
   course_id VARCHAR(10) COLLATE NOCASE,
   semester VARCHAR(10) COLLATE NOCASE,
-  grade VARCHAR(2) COLLATE NOCASE
+  grade VARCHAR(2) COLLATE NOCASE,
+  FOREIGN KEY (student_id) REFERENCES students(student_id),
+  FOREIGN KEY (course_id) REFERENCES courses(course_id)
 );
 
 INSERT INTO students VALUES

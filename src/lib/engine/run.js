@@ -103,6 +103,55 @@ function displayNames(root, fallback) {
   });
 }
 
+
+const DDL_RE = /^\s*(drop|set)\b/i;
+
+/** Emulates MySQL DROP TABLE / SET FOREIGN_KEY_CHECKS on a throwaway copy of the dataset. Result = tables left. */
+async function runDdl(dataset, sql) {
+  const t0 = performance.now();
+  const { SQL, scripts } = await getEngine();
+  const db = new SQL.Database();
+  try {
+    db.run(scripts[dataset]);
+    const tables = () => db.exec("SELECT name FROM sqlite_master WHERE type='table' ORDER BY name")[0]?.values.map((r) => r[0]) ?? [];
+    const fkRefs = (parent) => {
+      const out = [];
+      for (const t of tables()) {
+        if (t.toLowerCase() === parent.toLowerCase()) continue;
+        db.exec(`PRAGMA foreign_key_list(${t})`)[0]?.values.forEach((r, i) => {
+          if (String(r[2]).toLowerCase() === parent.toLowerCase()) out.push({ table: t, name: `${t}_ibfk_${i + 1}` });
+        });
+      }
+      return out;
+    };
+    let fkChecks = true;
+    for (const stmt of sql.split(";").map((x) => x.trim()).filter(Boolean)) {
+      let m;
+      if ((m = /^set\s+(?:@@(?:session\.)?)?foreign_key_checks\s*=\s*([01]|on|off|true|false)$/i.exec(stmt))) {
+        fkChecks = /^(1|on|true)$/i.test(m[1]);
+      } else if ((m = /^drop\s+table\s+(if\s+exists\s+)?(.+)$/i.exec(stmt))) {
+        const names = m[2].split(",").map((x) => x.trim().replace(/^`|`$/g, "").replace(new RegExp(`^${dataset}\\.`, "i"), "").replace(/^`|`$/g, ""));
+        const have = new Set(tables().map((t) => t.toLowerCase()));
+        const missing = names.filter((n) => !have.has(n.toLowerCase()));
+        if (missing.length && !m[1]) throw new MysqlError(1051, "42S02", `Unknown table '${missing.map((n) => `${dataset}.${n}`).join(",")}'`);
+        const dropping = new Set(names.map((n) => n.toLowerCase()));
+        for (const n of names) {
+          if (!have.has(n.toLowerCase())) continue;
+          const ref = fkChecks ? fkRefs(n).find((r) => !dropping.has(r.table.toLowerCase())) : null;
+          if (ref) throw new MysqlError(3730, "HY000", `Cannot drop table '${n}' referenced by a foreign key constraint '${ref.name}' on table '${ref.table}'.`);
+        }
+        for (const n of names) if (have.has(n.toLowerCase())) db.run(`DROP TABLE ${n}`);
+      } else {
+        throw new MysqlError(1064, "42000", `You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '${stmt.slice(0, 20)}' at line 1`);
+      }
+    }
+    const rows = tables().map((t) => [t]);
+    return { columns: [`Tables_in_${dataset}`], rows, scales: [null], truncated: false, ms: Math.round((performance.now() - t0) * 10) / 10 };
+  } finally {
+    db.close();
+  }
+}
+
 /** Run one MySQL-flavoured SELECT. Returns {columns, rows, scales, truncated, ms} or throws MysqlError. */
 export async function runQuery(dataset, sql, { limit = ROW_LIMIT } = {}) {
   const { dbs, schema } = await getEngine();
@@ -113,6 +162,7 @@ export async function runQuery(dataset, sql, { limit = ROW_LIMIT } = {}) {
   if (hit) return { ...hit, ms: 0, cached: true };
 
   const t0 = performance.now();
+  if (DDL_RE.test(sql)) return runDdl(dataset, sql);
   const root = parseSelect(sql);
   walk(root, (n) => {
     if (n.db && String(n.db).toLowerCase() === dataset) n.db = null;

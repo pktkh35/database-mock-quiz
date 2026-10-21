@@ -5,7 +5,8 @@ CREATE TABLE regions (
 CREATE TABLE countries (
   country_id CHAR(2) PRIMARY KEY COLLATE NOCASE,
   country_name VARCHAR(40) COLLATE NOCASE,
-  region_id INT
+  region_id INT,
+  FOREIGN KEY (region_id) REFERENCES regions(region_id)
 );
 CREATE TABLE locations (
   location_id INT PRIMARY KEY,
@@ -13,13 +14,16 @@ CREATE TABLE locations (
   postal_code VARCHAR(12),
   city VARCHAR(30) COLLATE NOCASE,
   state_province VARCHAR(25) COLLATE NOCASE,
-  country_id CHAR(2) COLLATE NOCASE
+  country_id CHAR(2) COLLATE NOCASE,
+  FOREIGN KEY (country_id) REFERENCES countries(country_id)
 );
 CREATE TABLE departments (
   department_id INT PRIMARY KEY,
   department_name VARCHAR(30) COLLATE NOCASE,
   manager_id INT,
-  location_id INT
+  location_id INT,
+  FOREIGN KEY (location_id) REFERENCES locations(location_id),
+  FOREIGN KEY (manager_id) REFERENCES employees(employee_id)
 );
 CREATE TABLE jobs (
   job_id VARCHAR(10) PRIMARY KEY COLLATE NOCASE,
@@ -38,14 +42,20 @@ CREATE TABLE employees (
   salary DECIMAL(8,2),
   commission_pct DECIMAL(2,2),
   manager_id INT,
-  department_id INT
+  department_id INT,
+  FOREIGN KEY (job_id) REFERENCES jobs(job_id),
+  FOREIGN KEY (manager_id) REFERENCES employees(employee_id),
+  FOREIGN KEY (department_id) REFERENCES departments(department_id)
 );
 CREATE TABLE job_history (
   employee_id INT,
   start_date DATE,
   end_date DATE,
   job_id VARCHAR(10) COLLATE NOCASE,
-  department_id INT
+  department_id INT,
+  FOREIGN KEY (employee_id) REFERENCES employees(employee_id),
+  FOREIGN KEY (job_id) REFERENCES jobs(job_id),
+  FOREIGN KEY (department_id) REFERENCES departments(department_id)
 );
 
 INSERT INTO regions VALUES (1,'Europe'),(2,'Americas'),(3,'Asia'),(4,'Middle East and Africa');

@@ -7,7 +7,8 @@ CREATE TABLE customer (
   cus_lname VARCHAR(20) COLLATE NOCASE,
   cus_fname VARCHAR(20) COLLATE NOCASE,
   cus_balance DECIMAL(8,2),
-  agent_code INT
+  agent_code INT,
+  FOREIGN KEY (agent_code) REFERENCES agent(agent_code)
 );
 CREATE TABLE product (
   p_code VARCHAR(5) PRIMARY KEY COLLATE NOCASE,
@@ -17,7 +18,8 @@ CREATE TABLE product (
 CREATE TABLE orders (
   order_no VARCHAR(5) PRIMARY KEY,
   customer_no VARCHAR(5),
-  p_code VARCHAR(5) COLLATE NOCASE
+  p_code VARCHAR(5) COLLATE NOCASE,
+  FOREIGN KEY (p_code) REFERENCES product(p_code)
 );
 
 INSERT INTO agent VALUES

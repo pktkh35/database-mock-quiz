@@ -11,6 +11,7 @@ const KEYWORDS = {
   "SELF JOIN": (ctx) => ctx.selfJoin,
   JOIN: (ctx) => ctx.joins.length > 0 || ctx.commaJoin,
   "INNER JOIN": (ctx) => ctx.joins.some((j) => /^(INNER\s+)?JOIN$/i.test(j) || /^INNER/i.test(j)),
+  "OUTER JOIN": (ctx) => ctx.joins.some((j) => /^(LEFT|RIGHT)/i.test(j)),
   "LEFT JOIN": (ctx) => ctx.joins.some((j) => /^LEFT/i.test(j)),
   "RIGHT JOIN": (ctx) => ctx.joins.some((j) => /^RIGHT/i.test(j)),
   "NOT IN": (ctx) => ctx.ops.has("NOT IN"),
@@ -97,8 +98,9 @@ function analyze(root) {
   return ctx;
 }
 
-function evaluate(token, ctx) {
+function evaluate(token, ctx, sql) {
   const t = token.toUpperCase();
+  if (ctx.ddl) return DDL[t] ? DDL[t].test(sql) : false;
   if (t === "SUBQUERY") return ctx.subquery;
   if (t === "SUBQUERY_IN_WHERE") return ctx.subInWhere;
   if (t === "SUBQUERY_IN_FROM") return ctx.subInFrom;
@@ -112,18 +114,26 @@ export function labelOf(kind, token) {
   return kind === "tables" ? `ตาราง ${token}` : base;
 }
 
+const DDL = {
+  "DROP TABLE": /\bdrop\s+table\b/i,
+  "IF EXISTS": /\bif\s+exists\b/i,
+  "FOREIGN_KEY_CHECKS=0": /foreign_key_checks\s*=\s*(0|off|false)\b/i,
+};
+
 /** rules: {require?, forbid?, tables?}. Returns chips [{kind,token,ok}] or null when SQL does not parse. */
 export function checkRules(rules, sql) {
   if (!rules) return { chips: [], pass: true, parsed: true };
   const chips = [];
   let ctx = null;
+  const isDdl = /^\s*(drop|set)\b/i.test(sql);
+  if (isDdl) ctx = { ddl: true };
   try {
-    ctx = analyze(parseSelect(sql));
+    if (!isDdl) ctx = analyze(parseSelect(sql));
   } catch {
     ctx = null;
   }
-  for (const token of rules.require ?? []) chips.push({ kind: "require", token, ok: ctx ? evaluate(token, ctx) : false });
-  for (const token of rules.forbid ?? []) chips.push({ kind: "forbid", token, ok: ctx ? !evaluate(token, ctx) : false });
+  for (const token of rules.require ?? []) chips.push({ kind: "require", token, ok: ctx ? evaluate(token, ctx, sql) : false });
+  for (const token of rules.forbid ?? []) chips.push({ kind: "forbid", token, ok: ctx ? !evaluate(token, ctx, sql) : false });
   for (const token of rules.tables ?? []) chips.push({ kind: "tables", token, ok: ctx ? ctx.tables.has(token.toLowerCase()) : false });
   return { chips, pass: chips.every((c) => c.ok), parsed: !!ctx };
 }

@@ -943,7 +943,7 @@
       "label": "analyze()",
       "file_type": "code",
       "source_file": "src/lib/rules.js",
-      "source_location": "L37",
+      "source_location": "L38",
       "id": "lib_rules_analyze",
       "community": 0,
       "norm_label": "analyze()"
@@ -952,7 +952,7 @@
       "label": "evaluate()",
       "file_type": "code",
       "source_file": "src/lib/rules.js",
-      "source_location": "L100",
+      "source_location": "L101",
       "id": "lib_rules_evaluate",
       "community": 0,
       "norm_label": "evaluate()"
@@ -961,16 +961,25 @@
       "label": "labelOf()",
       "file_type": "code",
       "source_file": "src/lib/rules.js",
-      "source_location": "L110",
+      "source_location": "L112",
       "id": "lib_rules_labelof",
       "community": 0,
       "norm_label": "labelof()"
     },
     {
+      "label": "DDL",
+      "file_type": "code",
+      "source_file": "src/lib/rules.js",
+      "source_location": "L117",
+      "id": "lib_rules_ddl",
+      "community": 0,
+      "norm_label": "ddl"
+    },
+    {
       "label": "checkRules()",
       "file_type": "code",
       "source_file": "src/lib/rules.js",
-      "source_location": "L116",
+      "source_location": "L124",
       "id": "lib_rules_checkrules",
       "community": 0,
       "norm_label": "checkrules()"
@@ -1125,7 +1134,7 @@
       "source_file": "src/lib/engine/db.js",
       "source_location": "L1",
       "id": "src_lib_engine_db_js",
-      "community": 16,
+      "community": 1,
       "norm_label": "db.js"
     },
     {
@@ -1134,7 +1143,7 @@
       "source_file": "src/lib/engine/db.js",
       "source_location": "L5",
       "id": "engine_db_datasets",
-      "community": 16,
+      "community": 1,
       "norm_label": "datasets"
     },
     {
@@ -1143,7 +1152,7 @@
       "source_file": "src/lib/engine/db.js",
       "source_location": "L9",
       "id": "engine_db_register",
-      "community": 16,
+      "community": 1,
       "norm_label": "register()"
     },
     {
@@ -1152,25 +1161,25 @@
       "source_file": "src/lib/engine/db.js",
       "source_location": "L65",
       "id": "engine_db_init",
-      "community": 16,
+      "community": 1,
       "norm_label": "init()"
     },
     {
       "label": "readSchema()",
       "file_type": "code",
       "source_file": "src/lib/engine/db.js",
-      "source_location": "L84",
+      "source_location": "L86",
       "id": "engine_db_readschema",
-      "community": 16,
+      "community": 1,
       "norm_label": "readschema()"
     },
     {
       "label": "getEngine()",
       "file_type": "code",
       "source_file": "src/lib/engine/db.js",
-      "source_location": "L97",
+      "source_location": "L99",
       "id": "engine_db_getengine",
-      "community": 16,
+      "community": 1,
       "norm_label": "getengine()"
     },
     {
@@ -1228,10 +1237,19 @@
       "norm_label": "displaynames()"
     },
     {
+      "label": "runDdl()",
+      "file_type": "code",
+      "source_file": "src/lib/engine/run.js",
+      "source_location": "L110",
+      "id": "engine_run_runddl",
+      "community": 1,
+      "norm_label": "runddl()"
+    },
+    {
       "label": "runQuery()",
       "file_type": "code",
       "source_file": "src/lib/engine/run.js",
-      "source_location": "L107",
+      "source_location": "L156",
       "id": "engine_run_runquery",
       "community": 1,
       "norm_label": "runquery()"
@@ -1240,7 +1258,7 @@
       "label": "getSchema()",
       "file_type": "code",
       "source_file": "src/lib/engine/run.js",
-      "source_location": "L153",
+      "source_location": "L203",
       "id": "engine_run_getschema",
       "community": 16,
       "norm_label": "getschema()"
@@ -1402,7 +1420,7 @@
       "label": "questions",
       "file_type": "code",
       "source_file": "src/data/questions.js",
-      "source_location": "L7",
+      "source_location": "L8",
       "id": "data_questions_questions",
       "community": 0,
       "norm_label": "questions"
@@ -1411,7 +1429,7 @@
       "label": "publicQuestion()",
       "file_type": "code",
       "source_file": "src/data/questions.js",
-      "source_location": "L2501",
+      "source_location": "L1684",
       "id": "data_questions_publicquestion",
       "community": 0,
       "norm_label": "publicquestion()"
@@ -1438,7 +1456,7 @@
       "label": "DATASET_LABELS",
       "file_type": "code",
       "source_file": "src/data/topics.js",
-      "source_location": "L10",
+      "source_location": "L22",
       "id": "data_topics_dataset_labels",
       "community": 0,
       "norm_label": "dataset_labels"
@@ -2014,6 +2032,17 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "scripts/check.mjs",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "scripts_check_mjs",
+      "target": "data_topics_topics",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/check.mjs",
       "source_location": "L6",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -2090,9 +2119,9 @@
       "source_file": "scripts/check.mjs",
       "source_location": "L38",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_check_mjs",
-      "target": "scripts_check_full",
-      "confidence_score": 1.0
+      "target": "scripts_check_full"
     },
     {
       "relation": "contains",
@@ -2110,9 +2139,9 @@
       "source_file": "scripts/check.mjs",
       "source_location": "L39",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_check_mjs",
-      "target": "scripts_check_part",
-      "confidence_score": 1.0
+      "target": "scripts_check_part"
     },
     {
       "relation": "contains",
@@ -2949,6 +2978,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/lib/rules.js",
+      "source_location": "L117",
+      "weight": 1.0,
+      "source": "src_lib_rules_js",
+      "target": "lib_rules_ddl",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/rules.js",
       "source_location": "L83",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -3488,6 +3527,17 @@
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
+      "source_file": "src/lib/engine/run.js",
+      "source_location": "L112",
+      "weight": 1.0,
+      "source": "engine_run_runddl",
+      "target": "engine_db_getengine",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/lib/engine/run.js",
       "source_location": "L108",
@@ -3647,6 +3697,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/lib/engine/run.js",
+      "source_location": "L110",
+      "weight": 1.0,
+      "source": "src_lib_engine_run_js",
+      "target": "engine_run_runddl",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/engine/run.js",
       "source_location": "L107",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -3718,6 +3778,17 @@
       "confidence_score": 1.0,
       "source": "engine_run_runquery",
       "target": "engine_run_displaynames"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/engine/run.js",
+      "source_location": "L165",
+      "weight": 1.0,
+      "source": "engine_run_runquery",
+      "target": "engine_run_runddl",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -4254,5 +4325,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "a7eafa30cda2f035a8d414522e09fa345be4ee9c"
+  "built_at_commit": "2582477a8ac9d7c5e3be07745ae702c6b558654f"
 }

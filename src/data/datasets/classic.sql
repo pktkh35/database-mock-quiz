@@ -17,7 +17,9 @@ CREATE TABLE employees (
   email VARCHAR(100) COLLATE NOCASE,
   officeCode VARCHAR(10),
   reportsTo INT,
-  jobTitle VARCHAR(50) COLLATE NOCASE
+  jobTitle VARCHAR(50) COLLATE NOCASE,
+  FOREIGN KEY (officeCode) REFERENCES offices(officeCode),
+  FOREIGN KEY (reportsTo) REFERENCES employees(employeeNumber)
 );
 CREATE TABLE customers (
   customerNumber INT PRIMARY KEY,
@@ -32,7 +34,8 @@ CREATE TABLE customers (
   postalCode VARCHAR(15),
   country VARCHAR(50) COLLATE NOCASE,
   salesRepEmployeeNumber INT,
-  creditLimit DECIMAL(10,2)
+  creditLimit DECIMAL(10,2),
+  FOREIGN KEY (salesRepEmployeeNumber) REFERENCES employees(employeeNumber)
 );
 CREATE TABLE productlines (
   productLine VARCHAR(50) PRIMARY KEY COLLATE NOCASE,
@@ -46,7 +49,8 @@ CREATE TABLE products (
   productVendor VARCHAR(50) COLLATE NOCASE,
   quantityInStock INT,
   buyPrice DECIMAL(10,2),
-  MSRP DECIMAL(10,2)
+  MSRP DECIMAL(10,2),
+  FOREIGN KEY (productLine) REFERENCES productlines(productLine)
 );
 CREATE TABLE orders (
   orderNumber INT PRIMARY KEY,
@@ -55,7 +59,8 @@ CREATE TABLE orders (
   shippedDate DATE,
   status VARCHAR(15) COLLATE NOCASE,
   comments VARCHAR(500) COLLATE NOCASE,
-  customerNumber INT
+  customerNumber INT,
+  FOREIGN KEY (customerNumber) REFERENCES customers(customerNumber)
 );
 CREATE TABLE orderdetails (
   orderNumber INT,
@@ -63,14 +68,17 @@ CREATE TABLE orderdetails (
   quantityOrdered INT,
   priceEach DECIMAL(10,2),
   orderLineNumber INT,
-  PRIMARY KEY (orderNumber, productCode)
+  PRIMARY KEY (orderNumber, productCode),
+  FOREIGN KEY (orderNumber) REFERENCES orders(orderNumber),
+  FOREIGN KEY (productCode) REFERENCES products(productCode)
 );
 CREATE TABLE payments (
   customerNumber INT,
   checkNumber VARCHAR(50) COLLATE NOCASE,
   paymentDate DATE,
   amount DECIMAL(10,2),
-  PRIMARY KEY (customerNumber, checkNumber)
+  PRIMARY KEY (customerNumber, checkNumber),
+  FOREIGN KEY (customerNumber) REFERENCES customers(customerNumber)
 );
 
 INSERT INTO offices VALUES

@@ -9,7 +9,8 @@ CREATE TABLE books (
   author_id INT,
   category VARCHAR(20) COLLATE NOCASE,
   price DECIMAL(7,2),
-  published_year INT
+  published_year INT,
+  FOREIGN KEY (author_id) REFERENCES authors(author_id)
 );
 CREATE TABLE members (
   member_id INT PRIMARY KEY,
@@ -22,7 +23,9 @@ CREATE TABLE loans (
   member_id INT,
   book_id INT,
   loan_date DATE,
-  return_date DATE
+  return_date DATE,
+  FOREIGN KEY (member_id) REFERENCES members(member_id),
+  FOREIGN KEY (book_id) REFERENCES books(book_id)
 );
 
 INSERT INTO authors VALUES

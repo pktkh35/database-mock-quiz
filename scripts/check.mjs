@@ -1,7 +1,7 @@
 // Validates the question bank, writes src/data/expected.json, measures grader speed.
 import fs from "node:fs";
 import path from "node:path";
-import { questions } from "../src/data/questions.js";
+import { TOPICS, questions } from "../src/data/questions.js";
 import { buildExpected, gradeOne, normalizeRows } from "../src/lib/grade.js";
 import { runQuery } from "../src/lib/engine/run.js";
 import { checkRules } from "../src/lib/rules.js";
@@ -21,7 +21,7 @@ for (const q of questions) {
   ids.add(q.id);
   if (!q.objective || q.objective.length < 10) problems.push(`${tag} ไม่มี objective (วัตถุประสงค์ของโจทย์)`);
   if (!q.rules || !((q.rules.require?.length ?? 0) + (q.rules.forbid?.length ?? 0) + (q.rules.tables?.length ?? 0))) problems.push(`${tag} ไม่มี rules ที่ตรวจเทคนิคตามวัตถุประสงค์`);
-  if (!["select", "join", "outer", "agg", "sub"].includes(q.topic)) problems.push(`${tag} topic ไม่ถูกต้อง: ${q.topic}`);
+  if (!TOPICS.map((t) => t.id).includes(q.topic)) problems.push(`${tag} topic ไม่ถูกต้อง: ${q.topic}`);
   if (!["hr", "food", "sales", "shop", "university", "library", "classic"].includes(q.dataset)) problems.push(`${tag} dataset ไม่ถูกต้อง: ${q.dataset}`);
   try {
     const e = await buildExpected(q);

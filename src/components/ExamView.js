@@ -53,7 +53,7 @@ export default function ExamView({ exam, onSubmitted, onExit }) {
   // Runs any SQL into the Result panel (answer text is untouched).
   const runInto = async (sql) => {
     if (!sql.trim()) return put({ sql, error: { full: "ยังไม่ได้เขียน SQL" } });
-    if (countStatements(sql) > 1)
+    if (countStatements(sql) > 1 && !/^\s*(drop|set)\b/i.test(sql))
       return put({ sql, error: { full: "คำตอบ 1 ข้อต้องเป็น SELECT 1 คำสั่ง กรุณาเหลือคำสั่งเดียว (ลบ ; ที่คั่นคำสั่ง) ก่อนรัน" } });
     setBusy(true);
     try {

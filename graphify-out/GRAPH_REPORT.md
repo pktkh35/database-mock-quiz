@@ -1,16 +1,16 @@
-# Graph Report - database-mock-quiz  (2026-10-09)
+# Graph Report - database-mock-quiz  (2026-10-21)
 
 ## Corpus Check
-- 41 files · ~31,803 words
+- 41 files · ~30,658 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 187 nodes · 247 edges · 18 communities (13 shown, 5 thin omitted)
+- 189 nodes · 252 edges · 18 communities (13 shown, 5 thin omitted)
 - Extraction: 97% EXTRACTED · 3% INFERRED · 0% AMBIGUOUS · INFERRED: 7 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `a7eafa30`
+- Built from commit: `2582477a`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -34,15 +34,15 @@
 - [[_COMMUNITY_Community 17|Community 17]]
 
 ## God Nodes (most connected - your core abstractions)
-1. `runQuery()` - 14 edges
+1. `runQuery()` - 15 edges
 2. `walk()` - 10 edges
 3. `SQL Mock Exam — Specification` - 10 edges
 4. `gradeOne()` - 8 edges
 5. `scripts` - 7 edges
 6. `checkRules()` - 7 edges
 7. `parseSelect()` - 7 edges
-8. `buildExpected()` - 5 edges
-9. `getEngine()` - 5 edges
+8. `getEngine()` - 6 edges
+9. `buildExpected()` - 5 edges
 10. `getSchema()` - 5 edges
 
 ## Surprising Connections (you probably didn't know these)
@@ -60,12 +60,12 @@
 ## Communities (18 total, 5 thin omitted)
 
 ### Community 0 - "Community 0"
-Cohesion: 0.10
-Nodes (27): questions, DATASET_LABELS, TOPICS, buildExpected(), byId, gradeAll(), gradeOne(), hashRows() (+19 more)
+Cohesion: 0.09
+Nodes (28): questions, DATASET_LABELS, TOPICS, buildExpected(), byId, gradeAll(), gradeOne(), hashRows() (+20 more)
 
 ### Community 1 - "Community 1"
-Cohesion: 0.19
-Nodes (15): astCache, containsMysql8Only(), MysqlError, OPT, parser, parseSelect(), tableNames(), toSqlite() (+7 more)
+Cohesion: 0.14
+Nodes (21): DATASETS, getEngine(), init(), readSchema(), register(), astCache, containsMysql8Only(), MysqlError (+13 more)
 
 ### Community 2 - "Community 2"
 Cohesion: 0.13
@@ -100,27 +100,29 @@ Cohesion: 0.50
 Nodes (3): compilerOptions, paths, @/*
 
 ### Community 16 - "Community 16"
-Cohesion: 0.21
-Nodes (9): DATASETS, getEngine(), init(), readSchema(), register(), runMeta(), getSchema(), POST() (+1 more)
+Cohesion: 0.33
+Nodes (4): runMeta(), getSchema(), POST(), GET()
 
 ### Community 17 - "Community 17"
 Cohesion: 0.19
 Nodes (6): ExamView(), SqlEditor, useNow(), GLYPH, questionStatus(), STATUS_LABEL
 
 ## Knowledge Gaps
-- **70 isolated node(s):** `@/*`, `regions`, `nextConfig`, `name`, `version` (+65 more)
+- **71 isolated node(s):** `@/*`, `regions`, `nextConfig`, `name`, `version` (+66 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **5 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `runQuery()` connect `Community 1` to `Community 16`, `Community 0`?**
-  _High betweenness centrality (0.020) - this node is a cross-community bridge._
+- **Why does `runQuery()` connect `Community 1` to `Community 0`, `Community 16`?**
+  _High betweenness centrality (0.021) - this node is a cross-community bridge._
 - **What connects `@/*`, `regions`, `nextConfig` to the rest of the system?**
-  _70 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _71 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
-  _Cohesion score 0.0957983193277311 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.09365079365079365 - nodes in this community are weakly interconnected._
+- **Should `Community 1` be split into smaller, more focused modules?**
+  _Cohesion score 0.1402116402116402 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**
   _Cohesion score 0.13333333333333333 - nodes in this community are weakly interconnected._
 - **Should `Community 3` be split into smaller, more focused modules?**
